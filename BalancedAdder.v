@@ -1,5 +1,5 @@
 module BalancedAdder #(parameter EXPONENT = 4, DATA_WIDTH = 4) (
-    input [2**EXPONENT-1:0] inputs [DATA_WIDTH-1: 0],
+    input [2**EXPONENT-1:0][DATA_WIDTH-1: 0] inputs,
     output [DATA_WIDTH-1: 0] outputValue
     );
 
