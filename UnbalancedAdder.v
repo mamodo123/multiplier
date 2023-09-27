@@ -1,14 +1,13 @@
-module UnbalancedAdder #(parameter SIZE = 4, DATA_WIDTH = 4) (
-    input [SIZE-1:0][DATA_WIDTH-1: 0] inputs,
+module UnbalancedAdder #(parameter SIZE = 5, DATA_WIDTH = 4) (
+    input [SIZE * DATA_WIDTH -1: 0] inputs,
     output [DATA_WIDTH-1: 0] outputValue
     );
+    
+    parameter exponent = $clog2(SIZE);
 
     generate
-        integer exponent = $clog2(SIZE);
         if (2**exponent == SIZE) begin
-            BalancedAdder left_child (
-                .EXPONENT(exponent),
-                .DATA_WIDTH(DATA_WIDTH),
+            BalancedAdder #(exponent, DATA_WIDTH) left_child (
                 .inputs(inputs),
                 .outputValue(outputValue)
             );
@@ -17,17 +16,13 @@ module UnbalancedAdder #(parameter SIZE = 4, DATA_WIDTH = 4) (
             wire[DATA_WIDTH-1: 0] balanced_child_wire;
             wire[DATA_WIDTH-1: 0] unbalanced_child_wire;
 
-            BalancedAdder balanced_child (
-                .EXPONENT(exponent - 1),
-                .DATA_WIDTH(DATA_WIDTH),
-                .inputs(inputs[SIZE-1: SIZE - 2**(exponent - 1)]),
+            BalancedAdder #(exponent -1, DATA_WIDTH) balanced_child  (
+                .inputs(inputs[SIZE * DATA_WIDTH -1: (SIZE - 2**(exponent - 1)) * DATA_WIDTH]),
                 .outputValue(balanced_child_wire)
             );
 
-            UnbalancedAdder unbalanced_child (
-                .SIZE(SIZE - 2**(exponent - 1)),
-                .DATA_WIDTH(DATA_WIDTH),
-                .inputs(inputs[SIZE - 1 - 2**(exponent - 1) : 0]),
+            UnbalancedAdder #(SIZE - 2**(exponent - 1), DATA_WIDTH) unbalanced_child (
+                .inputs(inputs[(SIZE - 2**(exponent - 1)) * DATA_WIDTH -1: 0]),
                 .outputValue(unbalanced_child_wire)
             );
 
