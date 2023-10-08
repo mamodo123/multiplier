@@ -3,7 +3,7 @@ module UnbalancedAdder #(parameter SIZE = 5, DATA_WIDTH = 4) (
     output [DATA_WIDTH-1: 0] outputValue
     );
     
-    parameter exponent = $clog2(SIZE);
+    localparam exponent = $clog2(SIZE);
 
     generate
         if (2**exponent == SIZE) begin
