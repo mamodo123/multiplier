@@ -1,0 +1,8084 @@
+%!PS-Adobe-3.0
+%%BoundingBox: 0 0 595 841
+%%Title: NovasSoft
+%%CreationDate: Wed Oct 11 17:17:07 2023
+
+%%Creator: NovasSoft
+%%Version: Verdi_T-2022.06-SP2
+%%Orientation: Landscape
+%%Pages: 1
+%%DocumentFonts: (atend)
+%%EndComments
+
+%%BeginProlog
+
+/C  {rcurveto}        bind def
+/L  {rlineto}         bind def     % dx dy rlineto
+/X  {0 rlineto}       bind def     % dx 0  rlineto
+/Y  {0 exch rlineto}  bind def     % 0  dy rlineto
+/M  {closepath moveto} bind def
+/N  {newpath moveto} bind def
+/WB {gsave translate dup scale} bind def
+/WE {eofill grestore} bind def
+
+/ww 4096 array def
+/wp 4096 array def
+/wo 4096 array def
+/W {wp exch get exec} bind def
+/WC {wp exch get cvx exec} bind def
+
+/get_word_len {
+/last carray length 1 sub def
+/ratio_acc 0 def
+0 1 last {carray exch get ww exch get ratio_acc add /ratio_acc exch def} for
+/word_len1 ratio_acc SETFONT mul def
+/word_len2 0 def
+/last carray length 1 sub def
+0 1 last { wo exch get word_len2 add /word_len2 exch def } for
+Use_Ratio 1 eq
+{/word_len word_len1 def}
+{/word_len word_len2 def} ifelse
+} def
+
+/cxshow0 { % i
+/i exch def
+cscale nextx nexty WB
+i WC
+eofill grestore
+/cwidth1 SETFONT ww i get mul def
+/cwidth2 wo wo_index get def
+Use_Ratio 1 eq
+{/cwidth cwidth1 def}
+{/cwidth cwidth2 def} ifelse
+/nextx nextx cwidth add def
+/wo_index wo_index 1 add def
+} def
+
+/cxshow { % array x y align
+/Y_Offset exch def /align exch def /cy exch def /cx exch def /carray exch def
+/cscale SETFONT 720 div 0.1 mul def
+/nextx 0 def /nexty 0 def
+gsave
+cx cy translate
+SETANGLE rotate
+0 Y_Offset translate
+get_word_len
+align (CENTER) eq {-0.5 word_len mul 0 translate} if
+align (RIGHT) eq {-1.0 word_len mul 0 translate} if
+/wo_index 0 def
+carray {cxshow0} forall % i
+grestore
+} def
+
+
+%%
+%%
+%% Stipple Data
+%%
+%%
+/patternFont 256 dict def
+patternFont begin
+  /FontType 3 def
+  /FontMatrix [1 0 0 1 0 0] def
+  /FontBBox [0 0 1 1] def
+
+  /Encoding 256 array def
+  0 1 255 {Encoding exch /.notdef put} for
+Encoding
+  dup 0 /0 put
+  dup 1 /1 put
+  dup 2 /2 put
+  dup 3 /3 put
+  dup 4 /4 put
+  dup 5 /5 put
+  dup 6 /6 put
+  dup 7 /7 put
+  dup 8 /8 put
+  dup 9 /9 put
+  dup 10 /10 put
+  dup 11 /11 put
+  dup 12 /12 put
+  dup 13 /13 put
+  dup 14 /14 put
+  dup 15 /15 put
+  dup 16 /16 put
+  dup 17 /17 put
+  dup 18 /18 put
+  dup 19 /19 put
+  dup 20 /20 put
+  dup 21 /21 put
+  dup 22 /22 put
+  dup 23 /23 put
+      23 /23 put
+
+  /BuildChar
+    { 0 begin
+       /char exch def
+       /fontdict exch def
+       /charname fontdict /Encoding get char get def
+
+       1 0 0 0 1 1 setcachedevice
+
+       16 16 true
+       [16 0 0 -16 0 16]
+       PatternArray char 1 getinterval cvx
+       imagemask
+      end
+     }bind def  %% BuildChar
+
+   /BuildChar load 0 6 dict put
+%%   /imagemaskmatrix[25 0 0 -25 0 0]def
+
+end  %% patternFont
+
+/PatternFont patternFont definefont pop
+
+/PatternArray 24 array def
+   PatternArray
+   dup   0   <ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff> put
+   dup   1   <9999666666669999999966666666999999996666666699999999666666669999> put
+   dup   2   <1111222244448888111122224444888811112222444488881111222244448888> put
+   dup   3   <eeeeddddbbbb7777eeeeddddbbbb7777eeeeddddbbbb7777eeeeddddbbbb7777> put
+   dup   4   <8888444422221111888844442222111188884444222211118888444422221111> put
+   dup   5   <7777bbbbddddeeee7777bbbbddddeeee7777bbbbddddeeee7777bbbbddddeeee> put
+   dup   6   <8888444422221111888844442222111188884444222211118888444422221111> put
+   dup   7   <0000000000000000000000000000000000000000000000000000000000000000> put
+   dup   8   <ffff202020202020ffff020202020202ffff202020202020ffff020202020202> put
+   dup   9   <8888555522225555888855552222555588885555222255558888555522225555> put
+   dup   10   <0000202020202020f8f820202020202000000404040404041f1f040404040404> put
+   dup   11   <4444000011110000444400001111000044440000111100004444000011110000> put
+   dup   12   <0000222200008888000022220000888800002222000088880000222200008888> put
+   dup   13   <aaaa5555aaaa55555555aaaa5555aaaaaaaa5555aaaa55555555aaaa5555aaaa> put
+   dup   14   <111111111111ffff111111111111ffff111111111111ffff111111111111ffff> put
+   dup   15   <000000001f1f11111111f1f100000000000000001f1f11111111f1f100000000> put
+   dup   16   <000000000000ffff000000000000ffff000000000000ffff000000000000ffff> put
+   dup   17   <c0c020201818040403038080606010100c0c0202818140403030080806060101> put
+   dup   18   <1111222244448888111122224444888811112222444488881111222244448888> put
+   dup   19   <00000800140022004100ff80000000000000001000280044008201ff00000000> put
+   dup   20   <0404040404043c3c2020202020203c3c0404040404043c3c2020202020203c3c> put
+   dup   21   <2222222222222222222222222222222222222222222222222222222222222222> put
+   dup   22   <8420821042082108208410820842082184208210420821082084108208420821> put
+         23   <8888555522225555888855552222555588885555222255558888555522225555> put
+
+
+
+/ginit
+{initgraphics
+% /Times-Roman findfont charSize scalefont setfont
+ shiftRight shiftDown  translate
+ rotateAngle rotate
+ gsave
+ grestore
+ 0.1 0.1 scale
+ newpath
+ 0 setlinewidth
+} bind def
+
+/greset
+{
+  initgraphics
+} bind def
+
+/disableoutput
+{
+  0 0 0 1 1 1 1 0 0 0 
+  setclip
+}bind def
+
+/rightshow     % 'y' no change
+ {dup stringwidth pop
+  0 exch sub
+  0 rmoveto
+  show
+} bind def
+
+/stringheight
+{
+  gsave                        % save current point
+%  disableoutput
+  (Ag) true charpath           % create "Ag" string path
+  flattenpath pathbbox         % get the string bbox llx, lly, UUx, UUy
+  exch pop exch sub            % discard UUx, calculate (UUy - lly)
+  exch pop                     % discard llx
+  grestore                     % restore current point
+}bind def
+
+/findascend
+{
+  stringheight
+  5 mul 6 div
+}bind def
+
+/finddescend
+{
+  stringheight
+  6 div
+}bind def
+/stringshiftleft
+{
+  dup stringwidth pop      % shift left
+  0 exch sub
+  0 rmoveto
+}bind def
+
+/stringshiftcenterX        % shift center X
+{
+  dup stringwidth pop
+  2 div
+  0 exch sub
+  0 rmoveto
+}bind def
+
+/stringshiftcenterY        % shift center Y
+{
+  stringheight
+  2 div
+  0 exch sub
+  0 exch
+  rmoveto
+}bind def
+
+/stringshiftup
+{
+  finddescend              % y offset is descend (positive, up)
+  0 exch                   % x offset is 0
+  rmoveto
+}bind def
+
+/stringshiftdown
+{
+  findascend 0 exch sub    % y offset is -ascend
+  0 exch                   % x offset is 0
+  rmoveto
+}bind def
+
+/normalshow
+{
+  translate
+  rotate
+  moveto
+  show
+  rotate
+  translate
+}bind def
+
+/rshow
+{
+  translate
+  rotate
+  moveto
+  stringshiftleft
+  show
+  rotate
+  translate
+}bind def
+
+/cshow
+{
+  translate
+  rotate
+  moveto
+  stringshiftcenterX
+  stringshiftcenterY
+  show
+  rotate
+  translate
+}bind def
+
+/lbshow
+ {
+  translate
+  rotate
+  moveto
+  stringshiftup
+  show
+  rotate
+  translate
+} bind def
+
+/lcshow
+ {
+  translate
+  rotate
+  moveto
+  stringshiftcenterY
+  show
+  rotate
+  translate
+} bind def
+
+/ltshow
+ {
+  translate
+  rotate
+  moveto
+  stringshiftdown
+  show
+  rotate
+  translate
+} bind def
+
+/rbshow
+ {
+  translate
+  rotate
+  moveto
+  stringshiftleft
+  stringshiftup
+  show
+  rotate
+  translate
+} bind def
+
+/rcshow
+ {
+  translate
+  rotate
+  moveto
+  stringshiftleft
+  stringshiftcenterY
+  show
+  rotate
+  translate
+} bind def
+
+/rtshow
+ {
+  translate
+  rotate
+  moveto
+  stringshiftleft
+  stringshiftdown
+  show
+  rotate
+  translate
+} bind def
+
+/cbshow
+{
+  translate
+  rotate
+  moveto
+  stringshiftcenterX
+  stringshiftup
+  show
+  rotate
+  translate
+}bind def
+
+/ctshow
+{
+  translate
+  rotate
+  moveto
+  stringshiftcenterX
+  stringshiftdown
+  show
+  rotate
+  translate
+}bind def
+
+/setclip
+{
+newpath
+stroke
+ginit
+moveto
+4 {lineto} repeat
+closepath
+clip
+newpath
+} bind def
+
+/header         % string
+ {
+  moveto    % 8.1
+  dup stringwidth pop
+  2 div
+  0 exch sub
+  0 rmoveto
+  show
+} bind def
+
+/footer         % string
+ {
+  moveto
+  dup stringwidth pop
+  2 div
+  0 exch sub
+  0 rmoveto
+  show
+} bind def
+
+/vshowdict 4 dict def
+/vstring
+{ vshowdict begin
+  /thestring exch def
+  /lineskip exch def
+  thestring
+    {
+      /charcode exch def
+      /thechar ( ) dup 0 charcode put def
+      0 lineskip neg rmoveto
+      gsave
+        thechar stringwidth pop 2 div neg 0 rmoveto
+        thechar show
+      grestore
+    } forall
+  end
+} def
+/vshow
+{
+  moveto
+  vstring
+} bind def
+
+/ptsPath
+{
+   /Num exch def
+   /pt1y exch def
+   /pt1x exch def
+   newpath pt1x pt1y moveto
+   Num 1 sub {/pt2y exch def /pt2x exch def pt2x pt2y lineto} repeat
+}bind def
+
+/arcPath
+{
+    /EndAngle   exch def
+    /StartAngle exch def
+    /Radius     exch def
+    /ScaleH     exch def
+    /ScaleW     exch def
+    /CenterY    exch def
+    /CenterX    exch def
+
+    CenterX CenterY translate ScaleW ScaleH scale 0 0 Radius StartAngle EndAngle arc
+}bind def
+
+/fillWithGray
+{
+   /Color exch def  % Color == 2 means this is a color printer 
+   gsave
+   Color 2 eq {} {Color 1 eq {1 setgray} {Color 3 eq {0 setgray} {0.6 setgray} ifelse} ifelse} ifelse
+   fill
+   grestore
+} bind def
+
+/fillWithPattern{ 
+  gsave
+  clip 
+  /PatternFont findfont 96 scalefont setfont 
+%  IsPatternFont 1 ne {/PatternFont findfont 96 scalefont setfont /IsPatternFont 1 store} if
+%  /str 3 string def 
+  /BBoxLLX BBoxLLX 96 div truncate 96 mul def 
+  /BBoxLLY BBoxLLY 96 div truncate 96 mul def 
+
+  /FillRow BBoxURX BBoxLLX sub cvi 96 idiv 1 add string def 
+
+  0 1 FillRow length 1 sub { FillRow exch PatternChar put} for
+
+  BBoxLLX BBoxLLY 96 BBoxURY { exch dup 3 -1 roll moveto FillRow show } for pop 
+  grestore
+}bind def 
+
+/fillBBox
+{
+   closepath
+   PatternChar 0 eq {Color fillWithGray} {fillWithPattern} ifelse
+}bind def
+
+/fillPath
+{
+   closepath
+   pathbbox
+   /BBoxURY exch store
+   /BBoxURX exch store
+   /BBoxLLY exch store
+   /BBoxLLX exch store
+   PatternChar 0 eq {Color fillWithGray} {fillWithPattern} ifelse
+}bind def
+
+/DPT
+{
+   /pty exch def
+   /ptx exch def
+   ptx pty moveto ptx pty 1 0 0 arc fill
+}bind def
+
+/DL
+{
+   /pt2y exch def
+   /pt2x exch def
+   /pt1y exch def
+   /pt1x exch def
+   newpath pt1x pt1y moveto pt2x pt2y lineto stroke
+}bind def
+
+/DLS
+{
+   ptsPath stroke
+}bind def
+
+/DR
+{
+   /BBoxURY exch def
+   /BBoxURX exch def
+   /BBoxLLY exch def
+   /BBoxLLX exch def
+
+   newpath BBoxLLX BBoxLLY moveto
+   BBoxURX BBoxLLY BBoxURX BBoxURY BBoxLLX BBoxURY 3 {lineto} repeat
+   closepath stroke
+}bind def
+
+/FR
+{
+   /Color exch def
+   /PatternChar exch def
+   /BBoxURY exch def
+   /BBoxURX exch def
+   /BBoxLLY exch def
+   /BBoxLLX exch def
+
+   newpath BBoxLLX BBoxLLY moveto
+   BBoxURX BBoxLLY BBoxURX BBoxURY BBoxLLX BBoxURY 3 {lineto} repeat
+   closepath
+   PatternChar 0 eq {Color fillWithGray} {fillWithPattern} ifelse
+}bind def
+
+/DP
+{
+   ptsPath closepath stroke
+}bind def
+
+/FP
+{
+   /Color exch def
+   /PatternChar exch def
+   ptsPath
+   fillPath
+}bind def
+
+/DA
+{
+    gsave
+    newpath
+    arcPath
+    stroke
+    grestore
+}bind def
+
+/FA
+{
+    /Color exch def
+    /PatternChar exch def
+
+    gsave
+    newpath
+    arcPath
+    fillPath
+    grestore
+}bind def
+
+/SC
+{
+   setrgbcolor
+}bind def
+
+/SLW
+{
+   setlinewidth
+}bind def
+
+/SF
+{
+   /FontSize exch def
+   findfont FontSize scalefont setfont
+   /IsPatternFont 0 store
+}bind def
+
+/SD
+{
+   setdash
+}bind def
+
+
+%
+%
+%%EndProlog
+%
+%
+
+
+
+%%BeginSetup
+%%BeginFeature: *PageSize
+<< /PageSize [595 841] >> setpagedevice
+%%EndFeature
+%%EndSetup
+
+
+/rotateAngle 90 def
+/shiftRight 595 def
+/shiftDown 0 def
+/charSize 10 def
+ginit
+/IsPatternFont 0 store
+0 -1 8419 -1 8419 5953 0 5953 0 -1  setclip
+
+%%Page: 1 1
+360 359 8059 359 8059 5593 360 5593 360 359  setclip
+[] 0 SD
+/Times 99 SF
+newpath
+-4209 -5592 0 () 0 0 0 4209 5592 ctshow
+closepath
+newpath
+-4209 -360 0 () 0 0 0 4209 360 cbshow
+closepath
+/-adobe-helvetica-medium-r-normal--14-*-*-*-*-*-iso8859-* 99 SF
+/-adobe-helvetica-medium-r-normal--14-*-*-*-*-*-iso8859-* 99 SF
+0 -1 8419 -1 8419 5953 0 5953 0 -1  setclip
+5 SLW
+[] 0 SD
+/Helvetica 78 SF
+360 459 8059 459 8059 5493 360 5493 360 459  setclip
+5 SLW
+[] 0 SD
+508 557 7911 5395 DR
+5690 920 7911 1041 DR
+6245 1040 6245 919 DL
+5764 1002 5764 963 2 DLS
+5764 1003 5779 1003 5785 1001 5789 997 5791 993 
+5793 988 5793 978 5791 972 5789 969 5785 965 
+5779 963 5764 963 12 DLS
+5805 978 5830 978 5830 982 5828 986 5826 988 
+5821 989 5815 989 5811 988 5807 984 5805 978 
+5805 974 5807 969 5811 965 5815 963 5821 963 
+5826 965 5830 969 17 DLS
+5864 984 5862 988 5856 989 5850 989 5844 988 
+5842 984 5844 980 5848 978 5858 976 5862 974 
+5864 971 5864 969 5862 965 5856 963 5850 963 
+5844 965 5842 969 17 DLS
+5877 1003 5879 1001 5881 1003 5879 1005 5877 1003 5 DLS
+5878 989 5878 963 2 DLS
+5918 989 5918 959 5916 954 5913 952 5909 950 
+5903 950 5899 952 7 DLS
+5918 984 5913 988 5909 989 5903 989 5899 988 
+5895 984 5893 978 5893 974 5895 969 5899 965 
+5903 963 5909 963 5913 965 5918 969 14 DLS
+5933 989 5933 963 2 DLS
+5934 982 5940 988 5944 989 5950 989 5954 988 
+5956 982 5956 963 7 DLS
+5969 954 1 DLS
+6005 1002 6005 963 2 DLS
+6005 1002 6034 963 2 DLS
+6034 1002 6034 963 2 DLS
+6072 989 6072 963 2 DLS
+6073 984 6069 988 6065 989 6059 989 6054 988 
+6050 984 6048 978 6048 974 6050 969 6054 965 
+6059 963 6065 963 6069 965 6073 969 14 DLS
+6089 989 6089 963 2 DLS
+6089 982 6095 988 6099 989 6106 989 6110 988 
+6112 982 6112 963 7 DLS
+6112 982 6118 988 6122 989 6128 989 6132 988 
+6134 982 6134 963 7 DLS
+6148 978 6173 978 6173 982 6171 986 6169 988 
+6165 989 6159 989 6155 988 6150 984 6148 978 
+6148 974 6150 969 6155 965 6159 963 6165 963 
+6169 965 6173 969 17 DLS
+6336 1002 6336 963 2 DLS
+6336 1002 6353 963 2 DLS
+6369 1002 6353 963 2 DLS
+6369 1002 6369 963 2 DLS
+6386 989 6386 971 6388 965 6392 963 6398 963 
+6402 965 6408 971 7 DLS
+6408 989 6408 963 2 DLS
+6424 1002 6424 963 2 DLS
+6443 1003 6443 971 6445 965 6449 963 6453 963 5 DLS
+6436 989 6451 989 2 DLS
+6463 1003 6465 1001 6468 1003 6465 1005 6463 1003 5 DLS
+6465 989 6465 963 2 DLS
+6481 989 6481 949 2 DLS
+6482 984 6486 988 6490 989 6496 989 6500 988 
+6504 984 6506 978 6506 974 6504 969 6500 965 
+6496 963 6490 963 6486 965 6482 969 14 DLS
+6520 1002 6520 963 2 DLS
+6535 1003 6537 1001 6539 1003 6537 1005 6535 1003 5 DLS
+6537 989 6537 963 2 DLS
+6551 978 6576 978 6576 982 6574 986 6572 988 
+6568 989 6562 989 6557 988 6553 984 6551 978 
+6551 974 6553 969 6557 965 6562 963 6568 963 
+6572 965 6576 969 17 DLS
+6590 989 6590 963 2 DLS
+6590 978 6592 984 6596 988 6600 989 6607 989 5 DLS
+5690 799 7911 920 DR
+6245 919 6245 798 DL
+5839 881 5839 842 2 DLS
+5840 882 5854 882 5860 880 5864 876 5866 872 
+5869 867 5869 857 5866 852 5864 848 5860 844 
+5854 842 5840 842 12 DLS
+5881 857 5905 857 5905 861 5903 865 5901 867 
+5897 869 5891 869 5887 867 5883 863 5881 857 
+5881 853 5883 848 5887 844 5891 842 5897 842 
+5901 844 5905 848 17 DLS
+5940 863 5938 867 5932 869 5926 869 5920 867 
+5918 863 5920 859 5924 857 5934 855 5938 853 
+5940 850 5940 848 5938 844 5932 842 5926 842 
+5920 844 5918 848 17 DLS
+5952 882 5954 880 5956 882 5954 884 5952 882 5 DLS
+5954 868 5954 842 2 DLS
+5993 869 5993 838 5991 833 5989 831 5985 829 
+5979 829 5975 831 7 DLS
+5993 863 5989 867 5985 869 5979 869 5975 867 
+5971 863 5969 857 5969 853 5971 848 5975 844 
+5979 842 5985 842 5989 844 5993 848 14 DLS
+6009 868 6009 842 2 DLS
+6009 861 6016 867 6020 869 6026 869 6030 867 
+6032 861 6032 842 7 DLS
+6046 857 6071 857 6071 861 6069 865 6067 867 
+6063 869 6056 869 6052 867 6048 863 6046 857 
+6046 853 6048 848 6052 844 6056 842 6063 842 
+6067 844 6071 848 17 DLS
+6085 868 6085 842 2 DLS
+6085 857 6087 863 6091 867 6095 869 6101 869 5 DLS
+6359 863 6355 867 6351 869 6345 869 6341 867 
+6337 863 6335 857 6335 853 6337 848 6341 844 
+6345 842 6351 842 6355 844 6359 848 14 DLS
+6373 868 6373 842 2 DLS
+6374 857 6376 863 6380 867 6384 869 6390 869 5 DLS
+6398 882 6400 880 6402 882 6400 884 6398 882 5 DLS
+6400 868 6400 842 2 DLS
+6416 868 6416 842 2 DLS
+6416 861 6423 867 6427 869 6433 869 6437 867 
+6439 861 6439 842 7 DLS
+6477 868 6477 842 2 DLS
+6478 863 6474 867 6470 869 6463 869 6459 867 
+6455 863 6453 857 6453 853 6455 848 6459 844 
+6463 842 6470 842 6474 844 6478 848 14 DLS
+6494 881 6494 842 2 DLS
+6532 881 6532 842 2 DLS
+6533 863 6529 867 6525 869 6519 869 6515 867 
+6510 863 6508 857 6508 853 6510 848 6515 844 
+6519 842 6525 842 6529 844 6533 848 14 DLS
+6547 882 6549 880 6551 882 6549 884 6547 882 5 DLS
+6549 868 6549 842 2 DLS
+5690 678 7911 799 DR
+6245 798 6245 677 DL
+5800 760 5800 721 2 DLS
+5800 761 5814 761 5820 759 5825 755 5827 751 
+5829 746 5829 736 5827 731 5825 727 5820 723 
+5814 721 5800 721 12 DLS
+5841 736 5865 736 5865 740 5863 744 5861 746 
+5857 748 5851 748 5847 746 5843 742 5841 736 
+5841 732 5843 727 5847 723 5851 721 5857 721 
+5861 723 5865 727 17 DLS
+5900 742 5898 746 5892 748 5886 748 5880 746 
+5878 742 5880 738 5884 736 5894 734 5898 732 
+5900 729 5900 727 5898 723 5892 721 5886 721 
+5880 723 5878 727 17 DLS
+5937 742 5933 746 5929 748 5923 748 5919 746 
+5914 742 5912 736 5912 732 5914 727 5919 723 
+5923 721 5929 721 5933 723 5937 727 14 DLS
+5951 747 5951 721 2 DLS
+5951 736 5953 742 5957 746 5961 748 5968 748 5 DLS
+5976 761 5978 759 5980 761 5978 763 5976 761 5 DLS
+5977 747 5977 721 2 DLS
+5994 747 5994 707 2 DLS
+5994 742 5998 746 6002 748 6008 748 6013 746 
+6017 742 6019 736 6019 732 6017 727 6013 723 
+6008 721 6002 721 5998 723 5994 727 14 DLS
+6035 761 6035 729 6037 723 6041 721 6045 721 5 DLS
+6028 747 6043 747 2 DLS
+6055 761 6058 759 6060 761 6058 763 6055 761 5 DLS
+6057 747 6057 721 2 DLS
+6082 748 6078 746 6074 742 6072 736 6072 732 
+6074 727 6078 723 6082 721 6088 721 6092 723 
+6096 727 6098 732 6098 736 6096 742 6092 746 
+6088 748 6082 748 17 DLS
+6112 747 6112 721 2 DLS
+6113 740 6119 746 6123 748 6129 748 6133 746 
+6135 740 6135 721 7 DLS
+5690 557 6800 678 DR
+6245 677 6245 556 DL
+5904 639 5904 600 2 DLS
+5904 640 5919 640 5925 638 5929 634 5931 630 
+5933 625 5933 615 5931 610 5929 606 5925 602 
+5919 600 5904 600 12 DLS
+5969 626 5969 600 2 DLS
+5970 621 5966 625 5961 627 5955 627 5951 625 
+5947 621 5945 615 5945 612 5947 606 5951 602 
+5955 600 5961 600 5966 602 5970 606 14 DLS
+5988 640 5988 608 5990 602 5994 600 5998 600 5 DLS
+5981 626 5996 626 2 DLS
+6008 615 6033 615 6033 619 6031 623 6029 625 
+6025 627 6019 627 6015 625 6011 621 6008 615 
+6008 612 6011 606 6015 602 6019 600 6025 600 
+6029 602 6033 606 17 DLS
+6291 640 6287 638 6283 634 6281 630 6279 625 
+6279 615 6281 610 6283 606 6287 602 6291 600 
+6300 600 6304 602 6308 606 6310 610 6312 615 
+6312 625 6310 630 6308 634 6304 638 6300 640 6291 640 21 DLS
+6349 621 6345 625 6340 627 6334 627 6330 625 
+6326 621 6324 615 6324 612 6326 606 6330 602 
+6334 600 6340 600 6345 602 6349 606 14 DLS
+6365 640 6365 608 6367 602 6371 600 6375 600 5 DLS
+6358 626 6373 626 2 DLS
+6383 591 1 DLS
+6424 632 6428 634 6434 640 6434 600 4 DLS
+6465 632 6469 634 6475 640 6475 600 4 DLS
+6504 604 6502 602 6504 600 6506 602 6504 604 5 DLS
+6506 602 6506 598 6504 595 6502 593 4 DLS
+6518 591 1 DLS
+6555 630 6555 632 6557 636 6559 638 6563 640 
+6571 640 6576 638 6578 636 6580 632 6580 629 
+6578 625 6573 619 6553 600 6582 600 14 DLS
+6606 640 6600 638 6596 632 6594 623 6594 617 
+6596 608 6600 602 6606 600 6610 600 6616 602 
+6620 608 6623 617 6623 623 6620 632 6616 638 
+6610 640 6606 640 17 DLS
+6637 630 6637 632 6639 636 6641 638 6645 640 
+6653 640 6657 638 6659 636 6661 632 6661 629 
+6659 625 6655 619 6635 600 6663 600 14 DLS
+6680 640 6702 640 6690 625 6696 625 6700 623 
+6702 621 6704 615 6704 612 6702 606 6698 602 
+6692 600 6686 600 6680 602 6678 604 6676 608 15 DLS
+6800 557 7911 678 DR
+7355 677 7355 556 DL
+6965 639 6982 600 2 DLS
+6998 639 6982 600 2 DLS
+7007 615 7031 615 7031 619 7029 623 7027 625 
+7023 627 7017 627 7013 625 7009 621 7007 615 
+7007 612 7009 606 7013 602 7017 600 7023 600 
+7027 602 7031 606 17 DLS
+7045 626 7045 600 2 DLS
+7045 615 7047 621 7051 625 7056 627 7062 627 5 DLS
+7092 621 7090 625 7084 627 7078 627 7072 625 
+7070 621 7072 617 7076 615 7086 613 7090 612 
+7092 608 7092 606 7090 602 7084 600 7078 600 
+7072 602 7070 606 17 DLS
+7105 640 7107 638 7109 640 7107 642 7105 640 5 DLS
+7106 626 7106 600 2 DLS
+7131 627 7127 625 7123 621 7121 615 7121 612 
+7123 606 7127 602 7131 600 7137 600 7141 602 
+7146 606 7148 612 7148 615 7146 621 7141 625 
+7137 627 7131 627 17 DLS
+7161 626 7161 600 2 DLS
+7162 619 7168 625 7172 627 7178 627 7182 625 
+7184 619 7184 600 7 DLS
+1006 1086 7413 1086 7413 5350 1006 5350 1006 1086  setclip
+5 SLW
+[] 0 SD
+/SETFONT 13 def
+/SETANGLE 270 def
+ww 0 0.562500 put
+wp 0 (
+newpath
+409 3117 M
+-152 -299 -217 -685 -217 -1158 C
+0 -1222 674 -1991 1863 -1991 C
+1010 0 1698 447 1698 1344 C
+-681 0 L
+0 -514 -497 -704 -1016 -704 C
+-830 0 -1190 582 -1190 1337 C
+0 845 274 1479 1197 1479 C
+512 0 1009 -279 1009 -704 C
+681 0 L
+0 836 -796 1344 -1691 1344 C
+-706 0 -1363 -327 -1653 -947 C
+closepath
+) put
+ww 1 0.571429 put
+wp 1 (
+newpath
+866 1969 M
+0 814 441 1455 1164 1455 C
+801 0 1170 -713 1170 -1448 C
+0 -727 -397 -1368 -1156 -1368 C
+-723 0 -1178 648 -1178 1361 C
+192 1991 M
+0 -1239 790 -2023 1845 -2023 C
+1185 0 1844 827 1844 2016 C
+0 1210 -645 2080 -1859 2080 C
+-1134 0 -1830 -964 -1830 -2073 C
+closepath
+) put
+ww 2 0.187500 put
+wp 2 (
+newpath
+320 5248 M
+0 -5248 L
+674 0 L
+0 5248 L
+-674 0 L
+closepath
+) put
+ww 3 0.544643 put
+wp 3 (
+newpath
+3554 0 M
+-674 0 L
+0 439 L
+-347 -365 -766 -471 -1171 -471 C
+-973 0 -1389 516 -1389 1553 C
+0 2511 L
+674 0 L
+0 -2507 L
+0 -521 277 -885 816 -885 C
+659 0 1070 486 1070 865 C
+0 2527 L
+674 0 L
+0 -4032 L
+closepath
+) put
+ww 4 0.803571 put
+wp 4 (
+newpath
+2496 2532 M
+0 -28 L
+0 497 -302 952 -718 952 C
+-510 0 -848 -469 -848 -938 C
+0 -2518 L
+-674 0 L
+0 4032 L
+674 0 L
+0 -420 L
+359 349 582 470 948 470 C
+402 0 855 -214 1070 -590 C
+427 455 640 590 1175 590 C
+884 0 1287 -655 1287 -1442 C
+0 -2640 L
+-674 0 L
+0 2640 L
+0 383 -291 816 -681 816 C
+-481 0 -885 -527 -885 -953 C
+0 -2503 L
+-674 0 L
+0 2532 L
+closepath
+) put
+ww 5 0.553571 put
+wp 5 (
+newpath
+320 3968 M
+681 0 L
+0 -404 L
+377 384 769 454 1153 454 C
+1019 0 1471 -576 1471 -1540 C
+0 -2478 L
+-681 0 L
+0 2477 L
+0 629 -225 979 -863 979 C
+-601 0 -1080 -550 -1080 -843 C
+0 -2613 L
+-681 0 L
+0 3968 L
+closepath
+) put
+ww 6 0.517857 put
+wp 6 (
+newpath
+1852 4128 M
+772 0 1473 -370 1473 -1152 C
+-701 0 L
+0 365 -408 512 -778 512 C
+-534 0 -823 -77 -875 -463 C
+0 -356 667 -563 1201 -756 C
+694 -271 1345 -500 1345 -1233 C
+-93 -774 -849 -1068 -1646 -1068 C
+-978 0 -1679 257 -1679 1216 C
+651 0 L
+0 -471 476 -576 1017 -576 C
+393 0 956 105 956 428 C
+50 298 -637 584 -1141 755 C
+-689 250 -1355 464 -1355 1249 C
+0 749 673 1088 1532 1088 C
+closepath
+) put
+ww 7 0.589286 put
+wp 7 (
+newpath
+128 -1728 M
+0 640 L
+3935 0 L
+0 -640 L
+-3935 0 L
+closepath
+) put
+ww 8 0.562500 put
+wp 8 (
+newpath
+994 1377 M
+136 -456 557 -769 1042 -769 C
+693 0 1100 513 1100 1375 C
+0 683 -278 1409 -1134 1409 C
+-608 0 -1008 -513 -1008 -791 C
+0 -1224 L
+320 4032 M
+674 0 L
+0 -465 L
+378 450 764 515 1207 515 C
+1050 0 1609 -1003 1609 -2079 C
+0 -1260 -724 -2035 -1638 -2035 C
+-464 0 -814 36 -1178 417 C
+0 -2113 L
+-674 0 L
+0 5760 L
+closepath
+) put
+ww 9 0.285714 put
+wp 9 (
+newpath
+320 5248 M
+0 -6976 L
+1442 0 L
+0 640 L
+-768 0 L
+0 5696 L
+768 0 L
+0 640 L
+-1442 0 L
+closepath
+) put
+ww 10 0.598214 put
+wp 10 (
+newpath
+861 4801 M
+-363 -355 -541 -666 -541 -1281 C
+674 0 L
+0 643 532 1088 1100 1088 C
+532 0 1106 -297 1106 -863 C
+0 -730 -602 -1036 -1142 -1320 C
+-1131 -542 -1866 -1171 -1866 -2425 C
+3689 0 L
+0 640 L
+-2939 0 L
+227 1280 3026 1280 2939 3106 C
+0 958 -744 1502 -1802 1502 C
+-532 0 -910 -151 -1218 -447 C
+closepath
+) put
+ww 11 0.294643 put
+wp 11 (
+newpath
+192 5248 M
+0 -640 L
+768 0 L
+0 -5696 L
+-768 0 L
+0 -640 L
+1442 0 L
+0 6976 L
+-1442 0 L
+closepath
+) put
+ww 12 0.232143 put
+wp 12 (
+newpath
+320 896 M
+0 -896 L
+903 0 L
+0 896 L
+-903 0 L
+closepath
+) put
+ww 13 0.571429 put
+wp 13 (
+newpath
+2752 1223 M
+-158 -405 -489 -615 -1152 -615 C
+-432 0 -734 130 -734 536 C
+0 680 835 680 1886 807 C
+0 -728 L
+3426 1274 M
+0 1587 L
+0 960 -594 1203 -1573 1203 C
+-929 0 -1502 -327 -1618 -1152 C
+681 0 L
+80 398 504 512 936 512 C
+425 0 900 -121 900 -551 C
+0 -361 L
+-871 -48 -2560 -48 -2560 -1376 C
+0 -758 507 -1168 1192 -1168 C
+612 0 1181 158 1462 467 C
+210 -402 413 -467 649 -467 C
+379 0 L
+0 640 L
+-165 0 -283 58 -349 159 C
+-66 87 -99 261 -99 507 C
+closepath
+) put
+ww 14 0.571429 put
+wp 14 (
+newpath
+1157 3064 M
+-178 -208 -291 -582 -291 -1042 C
+0 -756 383 -1382 1113 -1382 C
+511 0 944 252 1029 683 C
+0 1389 L
+-92 453 -567 712 -1042 712 C
+-313 0 -618 -108 -809 -360 C
+192 2079 M
+0 957 645 1985 1724 1985 C
+432 0 759 -93 1092 -374 C
+0 1590 L
+674 0 L
+0 -5280 L
+-674 0 L
+0 384 L
+-319 -324 -702 -416 -1156 -416 C
+-929 0 -1660 787 -1660 2111 C
+closepath
+) put
+ww 15 0.553571 put
+wp 15 (
+newpath
+924 2464 M
+0 718 462 1024 1067 1024 C
+647 0 1017 -476 1017 -1024 C
+-2084 0 L
+3746 1824 M
+94 1600 -687 2304 -1755 2304 C
+-1096 0 -1799 -690 -1799 -2183 C
+0 -1196 589 -1977 1821 -1977 C
+1061 0 1669 417 1669 1152 C
+-674 0 L
+-57 -371 -434 -512 -939 -512 C
+-932 0 -1196 557 -1196 1216 C
+2873 0 L
+closepath
+) put
+ww 16 0.437500 put
+wp 16 (
+newpath
+320 3968 M
+674 0 L
+0 -432 L
+411 372 815 482 1183 482 C
+462 0 729 -116 895 -296 C
+-462 -452 L
+-122 122 -274 186 -541 186 C
+-426 0 -1017 -487 -1075 -844 C
+0 -2612 L
+-674 0 L
+0 3968 L
+closepath
+) put
+ww 17 0.196429 put
+wp 17 (
+newpath
+320 4032 M
+681 0 L
+0 -4032 L
+-681 0 L
+0 4032 L
+320 5248 M
+681 0 L
+0 -704 L
+-681 0 L
+0 704 L
+closepath
+) put
+ww 18 0.410714 put
+wp 18 (
+newpath
+192 4000 M
+0 -640 L
+896 0 L
+0 -2397 L
+0 -995 579 -995 1570 -995 C
+0 640 L
+-619 0 -896 0 -896 434 C
+0 2318 L
+1024 0 L
+0 640 L
+-1024 0 L
+0 1216 L
+-674 0 L
+0 -1216 L
+-896 0 L
+closepath
+) put
+ww 19 0.705357 put
+wp 19 (
+newpath
+3505 1984 M
+-1925 0 L
+991 2496 L
+934 -2496 L
+4992 0 M
+-2055 5184 L
+-711 0 L
+-2162 -5184 L
+654 0 L
+582 1344 L
+2464 0 L
+560 -1344 L
+668 0 L
+closepath
+) put
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 10 11 12 13 14 14 15 16 6 7 2 1 1 8 9 10 11 12 17 5 8 3 18 10 19 14 14 15 16] 4170 3098 (RIGHT) 0 cxshow
+4168 3090 4168 3592 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+ww 20 0.607143 put
+wp 20 (
+newpath
+3524 566 M
+-340 -422 -823 -598 -1378 -598 C
+-1477 0 -1890 1285 -1890 2718 C
+0 1453 507 2594 1892 2594 C
+1376 0 1854 -1163 1854 -2595 C
+0 -1039 -130 -1662 -478 -2119 C
+3040 1038 M
+223 286 288 787 288 1647 C
+0 981 -223 1955 -1180 1955 C
+-1016 0 -1218 -924 -1218 -1955 C
+0 -1089 259 -2077 1217 -2077 C
+338 0 641 93 893 430 C
+closepath
+) put
+ww 21 0.348214 put
+wp 21 (
+newpath
+2018 5184 M
+0 -5184 L
+-674 0 L
+0 3933 L
+-334 -314 -704 -285 -1152 -285 C
+0 640 L
+889 0 1152 358 1152 896 C
+674 0 L
+closepath
+) put
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 20 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 17 5 8 3 18 21 19 14 14 15 16] 1780 3060 (RIGHT) 0 cxshow
+1778 3053 1778 3555 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 7 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 7 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 21 11 12 13 14 14 15 16 6 7 2 1 1 8 9 21 11 12 17 5 8 3 18 21 19 14 14 15 16] 2785 2985 (RIGHT) 0 cxshow
+2783 2977 2783 4132 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 20 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 17 5 8 3 18 10 19 14 14 15 16] 1766 3035 (RIGHT) 0 cxshow
+1764 3027 1764 3505 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+ww 22 0.571429 put
+wp 22 (
+newpath
+872 2012 M
+0 -661 379 -1372 1064 -1372 C
+629 0 1072 517 1072 1408 C
+0 747 -350 1408 -1036 1408 C
+-657 0 -1100 -560 -1100 -1444 C
+192 2020 M
+0 1141 544 2119 1766 2119 C
+400 0 771 -173 1050 -477 C
+0 434 L
+681 0 L
+0 -4004 L
+0 -1277 -596 -1820 -1767 -1820 C
+-886 0 -1602 390 -1602 1152 C
+652 0 L
+86 -358 414 -512 936 -512 C
+771 0 1100 330 1100 1129 C
+0 424 L
+-243 -356 -679 -465 -1108 -465 C
+-1093 0 -1708 942 -1708 2020 C
+closepath
+) put
+ww 23 0.571429 put
+wp 23 (
+newpath
+994 2675 M
+0 -1343 L
+141 -435 580 -692 1026 -692 C
+869 0 1116 650 1116 1392 C
+0 621 -325 1328 -1123 1328 C
+-432 0 -885 -257 -1019 -685 C
+320 5216 M
+674 0 L
+0 -1636 L
+346 260 707 420 1189 420 C
+1032 0 1627 -904 1627 -1968 C
+0 -1407 -738 -2064 -1721 -2064 C
+-367 0 -720 0 -1095 408 C
+0 -376 L
+-674 0 L
+0 5216 L
+closepath
+) put
+ww 24 0.553571 put
+wp 24 (
+newpath
+320 5248 M
+0 -5248 L
+674 0 L
+0 1574 L
+618 546 L
+1423 -2120 L
+805 0 L
+-1725 2530 L
+1632 1502 L
+-863 0 L
+-1890 -1711 L
+0 2927 L
+-674 0 L
+closepath
+) put
+ww 25 0.598214 put
+wp 25 (
+newpath
+870 4903 M
+-327 -339 -486 -528 -486 -1095 C
+674 0 L
+0 616 381 896 1056 896 C
+506 0 958 -266 958 -755 C
+0 -700 -480 -909 -1280 -909 C
+0 -640 L
+779 0 1536 -208 1536 -935 C
+0 -618 -639 -857 -1171 -857 C
+-552 0 -1164 166 -1244 832 C
+-657 0 L
+0 -1022 867 -1472 1897 -1472 C
+1009 0 1833 506 1833 1520 C
+0 661 -321 1100 -884 1260 C
+334 222 692 404 692 1194 C
+0 926 -785 1338 -1680 1338 C
+-523 0 -948 -128 -1244 -377 C
+closepath
+) put
+ww 26 0.544643 put
+wp 26 (
+newpath
+128 3968 M
+1534 -4026 L
+-179 -551 L
+-137 -322 -317 -479 -611 -479 C
+-360 0 L
+0 -640 L
+525 0 L
+611 0 827 413 1093 1177 C
+1646 4519 L
+-733 0 L
+-1028 -3075 L
+-1223 3075 L
+-664 0 L
+closepath
+) put
+ww 27 0.196429 put
+wp 27 (
+newpath
+384 5248 M
+0 -5248 L
+681 0 L
+0 5248 L
+-681 0 L
+closepath
+) put
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 7 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+wo 42 7 put
+wo 43 14 put
+wo 44 7 put
+wo 45 14 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 10 11 12 13 14 14 15 16 6 7 2 1 1 8 9 21 11 12 22 15 5 23 2 24 25 12 0 13 16 16 26 27 5] 3518 3223 (RIGHT) 0 cxshow
+3516 3216 3516 3818 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 10 11 12 13 14 14 15 16 6 7 2 1 1 8 9 10 11 12 17 5 8 3 18 21 19 14 14 15 16] 4157 2909 (RIGHT) 0 cxshow
+4155 2902 4155 3630 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 7 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 7 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 21 11 12 13 14 14 15 16 6 7 2 1 1 8 9 21 11 12 17 5 8 3 18 10 19 14 14 15 16] 2771 2960 (RIGHT) 0 cxshow
+2769 2952 2769 4095 2 DLS
+1778 3053 6178 3053 2 DLS
+2783 2977 6178 2977 2 DLS
+1764 3027 6178 3027 2 DLS
+4155 2902 6178 2902 2 DLS
+2769 2952 6178 2952 2 DLS
+4168 3090 6138 3090 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+ww 28 0.758929 put
+wp 28 (
+newpath
+192 2611 M
+0 -1824 1065 -2643 2603 -2643 C
+515 0 1229 238 1621 763 C
+0 -731 L
+674 0 L
+0 2592 L
+-2210 0 L
+0 -640 L
+1472 0 L
+0 -884 -816 -1312 -1583 -1312 C
+-1298 0 -1903 660 -1903 1946 C
+0 1229 697 2054 1902 2054 C
+753 0 1431 -391 1601 -1024 C
+670 0 L
+-96 1101 -1124 1664 -2266 1664 C
+-1565 0 -2581 -1052 -2581 -2669 C
+closepath
+) put
+ww 29 0.651786 put
+wp 29 (
+newpath
+384 5184 M
+0 -5184 L
+4066 0 L
+0 640 L
+-3392 0 L
+0 1728 L
+3072 0 L
+0 640 L
+-3072 0 L
+0 1536 L
+3358 0 L
+0 640 L
+-4032 0 L
+closepath
+) put
+ww 30 0.678571 put
+wp 30 (
+newpath
+320 5248 M
+695 0 L
+2697 -4150 L
+0 4150 L
+674 0 L
+0 -5248 L
+-702 0 L
+-2690 4207 L
+0 -4207 L
+-674 0 L
+0 5248 L
+closepath
+) put
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 21 7 0 1 2 3 4 5 6 7 2 1 1 8 7 25 7 7 13 14 14 15 16 6 7 2 1 1 8 7 21 7 7 0 13 16 16 26 19 14 14 15 16] 5067 3223 (RIGHT) 0 cxshow
+5065 3216 5065 3228 2 DLS
+5046 3228 5065 3228 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+ww 31 0.625000 put
+wp 31 (
+newpath
+2816 4178 M
+0 -2706 L
+-1872 0 L
+1872 2706 L
+2830 5248 M
+-2638 -3769 L
+0 -647 L
+2624 0 L
+0 -832 L
+674 0 L
+0 832 L
+704 0 L
+0 640 L
+-704 0 L
+0 3776 L
+-660 0 L
+closepath
+) put
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 10 7 0 1 2 3 4 5 6 7 2 1 1 8 7 31 7 7 13 14 14 15 16 6 7 2 1 1 8 7 21 7 7 0 13 16 16 26 19 14 14 15 16] 5651 3236 (RIGHT) 0 cxshow
+5649 3228 5649 3266 2 DLS
+5630 3228 5649 3228 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 25 11 12 13 14 14 15 16 6 7 2 1 1 8 9 10 11 12 17 5 8 3 18 21 19 14 14 15 16] 4863 2834 (RIGHT) 0 cxshow
+4861 2827 4861 3392 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 7 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 31 11 12 13 14 14 15 16 6 7 2 1 1 8 9 21 11 12 17 5 8 3 18 10 19 14 14 15 16] 5461 2746 (RIGHT) 0 cxshow
+5459 2739 5459 3241 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 25 11 12 13 14 14 15 16 6 7 2 1 1 8 9 10 11 12 17 5 8 3 18 10 19 14 14 15 16] 4877 2809 (RIGHT) 0 cxshow
+4875 2801 4875 3366 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 7 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 25 11 12 13 14 14 15 16 6 7 2 1 1 8 9 21 11 12 17 5 8 3 18 10 19 14 14 15 16] 4931 3173 (RIGHT) 0 cxshow
+4929 3166 4929 3291 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 7 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+wo 42 7 put
+wo 43 14 put
+wo 44 7 put
+wo 45 14 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 25 11 12 13 14 14 15 16 6 7 2 1 1 8 9 21 11 12 22 15 5 23 2 24 25 12 0 13 16 16 26 27 5] 4184 3223 (RIGHT) 0 cxshow
+4182 3216 4182 3668 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 7 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 31 11 12 13 14 14 15 16 6 7 2 1 1 8 9 21 11 12 17 5 8 3 18 21 19 14 14 15 16] 5474 2771 (RIGHT) 0 cxshow
+5472 2764 5472 3316 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 7 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+wo 42 7 put
+wo 43 14 put
+wo 44 7 put
+wo 45 14 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 31 11 12 13 14 14 15 16 6 7 2 1 1 8 9 21 11 12 22 15 5 23 2 24 25 12 0 13 16 16 26 27 5] 5529 3223 (RIGHT) 0 cxshow
+5527 3216 5527 3291 2 DLS
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 7 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 25 11 12 13 14 14 15 16 6 7 2 1 1 8 9 21 11 12 17 5 8 3 18 21 19 14 14 15 16] 4138 3732 (LEFT) 0 cxshow
+4136 3731 4209 3731 2 DLS
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+wo 42 7 put
+wo 43 14 put
+wo 44 7 put
+wo 45 14 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 25 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 22 15 5 23 2 24 25 12 0 13 16 16 26 27 5] 3463 3443 (LEFT) 0 cxshow
+3462 3442 4290 3442 2 DLS
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 25 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 17 5 8 3 18 21 19 14 14 15 16] 3445 4033 (LEFT) 0 cxshow
+3443 4032 4223 4032 2 DLS
+4155 3618 4236 3618 2 DLS
+4087 3693 4236 3693 2 DLS
+4087 3668 4236 3668 2 DLS
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 25 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 17 5 8 3 18 10 19 14 14 15 16] 3477 3518 (LEFT) 0 cxshow
+3476 3517 4290 3517 2 DLS
+/PatternFont patternFont definefont pop
+4169 3593 1.00 1.00 10 0 360 0 3 FA
+4087 3592 4236 3592 2 DLS
+/PatternFont patternFont definefont pop
+3299 3216 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 10 11] 3353 3217 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 10 11] 3287 3845 (LEFT) 0 cxshow
+3299 3216 3353 3216 2 DLS
+3394 3216 3516 3216 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 20 7 0 1 2 3 4 5 6 7 2 1 1 8 7 10 7 7 13 14 14 15 16 6 7 2 1 1 8 7 20 7 7 0 13 16 16 26 19 14 14 15 16] 3002 3977 (RIGHT) 0 cxshow
+3000 3969 3000 4032 2 DLS
+3000 3969 3027 3969 2 DLS
+2982 4032 3000 4032 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 21 7 0 1 2 3 4 5 6 7 2 1 1 8 7 10 7 7 13 14 14 15 16 6 7 2 1 1 8 7 20 7 7 0 13 16 16 26 19 14 14 15 16] 3002 3952 (RIGHT) 0 cxshow
+3000 3944 3000 3957 2 DLS
+3000 3944 3027 3944 2 DLS
+2982 3957 3000 3957 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 10 7 0 1 2 3 4 5 6 7 2 1 1 8 7 10 7 7 13 14 14 15 16 6 7 2 1 1 8 7 20 7 7 0 13 16 16 26 19 14 14 15 16] 3002 3889 (RIGHT) 0 cxshow
+3000 3881 3000 3919 2 DLS
+2982 3881 3000 3881 2 DLS
+3000 3919 3027 3919 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 7 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 20 7 0 1 2 3 4 5 6 7 2 1 1 8 7 21 7 7 13 14 14 15 16 6 7 2 1 1 8 7 20 7 7 0 13 16 16 26 19 14 14 15 16] 2323 3512 (RIGHT) 0 cxshow
+2321 3505 2321 3567 2 DLS
+2321 3505 2348 3505 2 DLS
+2303 3567 2321 3567 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 7 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 21 7 0 1 2 3 4 5 6 7 2 1 1 8 7 21 7 7 13 14 14 15 16 6 7 2 1 1 8 7 20 7 7 0 13 16 16 26 19 14 14 15 16] 2323 3487 (RIGHT) 0 cxshow
+2321 3479 2321 3492 2 DLS
+2321 3479 2348 3479 2 DLS
+2303 3492 2321 3492 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 7 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 10 7 0 1 2 3 4 5 6 7 2 1 1 8 7 21 7 7 13 14 14 15 16 6 7 2 1 1 8 7 20 7 7 0 13 16 16 26 19 14 14 15 16] 2323 3424 (RIGHT) 0 cxshow
+2321 3417 2321 3454 2 DLS
+2303 3417 2321 3417 2 DLS
+2321 3454 2348 3454 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 20 7 0 1 2 3 4 5 6 7 2 1 1 8 7 10 7 7 13 14 14 15 16 6 7 2 1 1 8 7 21 7 7 0 13 16 16 26 19 14 14 15 16] 3695 3700 (RIGHT) 0 cxshow
+3693 3693 3693 3756 2 DLS
+3693 3693 3720 3693 2 DLS
+3674 3756 3693 3756 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 21 7 0 1 2 3 4 5 6 7 2 1 1 8 7 10 7 7 13 14 14 15 16 6 7 2 1 1 8 7 21 7 7 0 13 16 16 26 19 14 14 15 16] 3695 3675 (RIGHT) 0 cxshow
+3693 3668 3693 3680 2 DLS
+3693 3668 3720 3668 2 DLS
+3674 3680 3693 3680 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 10 7 0 1 2 3 4 5 6 7 2 1 1 8 7 10 7 7 13 14 14 15 16 6 7 2 1 1 8 7 21 7 7 0 13 16 16 26 19 14 14 15 16] 3695 3613 (RIGHT) 0 cxshow
+3693 3605 3693 3643 2 DLS
+3674 3605 3693 3605 2 DLS
+3693 3643 3720 3643 2 DLS
+/PatternFont patternFont definefont pop
+2797 4045 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+2797 3970 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 10 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 17 5 8 3 18 21 19 14 14 15 16] 2799 3613 (RIGHT) 0 cxshow
+2796 3605 2796 4220 2 DLS
+2751 3605 2796 3605 2 DLS
+2796 3969 2891 3969 2 DLS
+2796 4044 2891 4044 2 DLS
+2796 4220 2837 4220 2 DLS
+/PatternFont patternFont definefont pop
+1778 3530 1.00 1.00 10 0 360 0 3 FA
+1778 3530 1791 3530 2 DLS
+1746 3555 1778 3555 2 DLS
+/PatternFont patternFont definefont pop
+3503 3744 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3503 3618 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 7 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 10 11 12 13 14 14 15 16 6 7 2 1 1 8 9 21 11 12 17 5 8 3 18 10 19 14 14 15 16] 3505 3248 (RIGHT) 0 cxshow
+3503 3241 3503 3844 2 DLS
+3394 3241 3503 3241 2 DLS
+3503 3618 3584 3618 2 DLS
+3503 3743 3584 3743 2 DLS
+3503 3844 3530 3844 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 10 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 1 3 18 8 3 18 19 14 14 15 16] 3233 3939 (RIGHT) 0 cxshow
+3231 3931 3231 4195 2 DLS
+3231 3931 3245 3931 2 DLS
+2976 4195 3231 4195 2 DLS
+/PatternFont patternFont definefont pop
+2118 3518 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+2199 3480 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 7 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+wo 42 7 put
+wo 43 14 put
+wo 44 7 put
+wo 45 14 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 21 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 22 15 5 23 2 24 25 12 0 13 16 16 26 27 5] 2119 3487 (RIGHT) 0 cxshow
+2117 3479 2117 4070 2 DLS
+2199 3404 2199 3479 2 DLS
+2199 3404 2212 3404 2 DLS
+2117 3479 2212 3479 2 DLS
+2049 3517 2117 3517 2 DLS
+2117 4070 2158 4070 2 DLS
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 7 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 10 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 0 13 16 16 26 19 14 14 15 16] 3167 3945 (LEFT) 0 cxshow
+3166 3944 3245 3944 2 DLS
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 7 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 7 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 21 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 0 13 16 16 26 19 14 14 15 16] 2488 3481 (LEFT) 0 cxshow
+2487 3479 2552 3479 2 DLS
+/PatternFont patternFont definefont pop
+2783 4120 1.00 1.00 10 0 360 0 3 FA
+2783 4120 2837 4120 2 DLS
+2751 4132 2783 4132 2 DLS
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 7 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 7 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 10 11 12 13 14 14 15 16 6 7 2 1 1 8 9 21 11 12 0 13 16 16 26 19 14 14 15 16] 3860 3669 (LEFT) 0 cxshow
+3859 3668 3937 3668 2 DLS
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 7 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 20 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 0 13 16 16 26 19 14 14 15 16] 1883 3518 (LEFT) 0 cxshow
+1881 3517 1914 3517 2 DLS
+/PatternFont patternFont definefont pop
+2824 3944 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+2824 3869 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+wo 42 7 put
+wo 43 14 put
+wo 44 7 put
+wo 45 14 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 10 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 22 15 5 23 2 24 25 12 0 13 16 16 26 27 5] 2826 3487 (RIGHT) 0 cxshow
+2824 3479 2824 4170 2 DLS
+2701 3479 2824 3479 2 DLS
+2824 3869 2891 3869 2 DLS
+2824 3944 2891 3944 2 DLS
+2824 4170 2837 4170 2 DLS
+/PatternFont patternFont definefont pop
+2810 4020 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+2810 3894 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 10 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 17 5 8 3 18 10 19 14 14 15 16] 2812 3537 (RIGHT) 0 cxshow
+2810 3530 2810 4195 2 DLS
+2751 3530 2810 3530 2 DLS
+2810 3894 2891 3894 2 DLS
+2810 4019 2891 4019 2 DLS
+2810 4195 2837 4195 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 7 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 7 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 7 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 21 11 12 13 14 14 15 16 6 7 2 1 1 8 9 21 11 12 0 13 16 16 26 19 14 14 15 16] 3220 3851 (RIGHT) 0 cxshow
+3217 3844 3217 4107 2 DLS
+3217 3844 3245 3844 2 DLS
+2927 4107 3217 4107 2 DLS
+/PatternFont patternFont definefont pop
+1765 3480 1.00 1.00 10 0 360 0 3 FA
+1746 3479 1764 3479 2 DLS
+1764 3505 1791 3505 2 DLS
+/PatternFont patternFont definefont pop
+4006 3668 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 31 11] 4046 3669 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 31 11] 3979 3669 (LEFT) 0 cxshow
+3978 3668 4046 3668 2 DLS
+/PatternFont patternFont definefont pop
+3299 3944 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3299 3919 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 25 11] 3353 3920 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 25 11] 3287 3945 (LEFT) 0 cxshow
+3299 3919 3353 3919 2 DLS
+3285 3944 3299 3944 2 DLS
+/PatternFont patternFont definefont pop
+3299 3844 1.00 1.00 10 0 360 0 3 FA
+3285 3844 3299 3844 2 DLS
+/PatternFont patternFont definefont pop
+2607 3480 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 7 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 21 11] 2660 3481 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 7 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 21 11] 2594 3481 (LEFT) 0 cxshow
+2593 3479 2661 3479 2 DLS
+/PatternFont patternFont definefont pop
+1968 3518 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 20 11] 2008 3518 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 20 11] 1956 3518 (LEFT) 0 cxshow
+1954 3517 2009 3517 2 DLS
+/PatternFont patternFont definefont pop
+3462 3919 1.00 1.00 10 0 360 0 3 FA
+3462 3442 3462 3919 2 DLS
+3394 3919 3530 3919 2 DLS
+/PatternFont patternFont definefont pop
+3462 4032 1.00 1.00 10 0 360 0 3 FA
+3462 3969 3462 4032 2 DLS
+3462 3969 3530 3969 2 DLS
+/PatternFont patternFont definefont pop
+2145 3643 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+2172 3580 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 7 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 21 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 17 5 8 3 18 21 19 14 14 15 16] 2147 3587 (RIGHT) 0 cxshow
+2144 3580 2144 4120 2 DLS
+2172 3505 2172 3580 2 DLS
+2172 3505 2212 3505 2 DLS
+2144 3580 2212 3580 2 DLS
+2099 3643 2144 3643 2 DLS
+2144 4120 2158 4120 2 DLS
+/PatternFont patternFont definefont pop
+3517 3668 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3517 3593 1.00 1.00 10 0 360 0 3 FA
+3516 3592 3584 3592 2 DLS
+3516 3668 3584 3668 2 DLS
+3516 3818 3530 3818 2 DLS
+/PatternFont patternFont definefont pop
+4155 3618 1.00 1.00 10 0 360 0 3 FA
+4136 3630 4155 3630 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 25 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 1 3 18 8 3 18 19 14 14 15 16] 3926 3700 (RIGHT) 0 cxshow
+3924 3693 3924 3944 2 DLS
+3924 3693 3937 3693 2 DLS
+3669 3944 3924 3944 2 DLS
+/PatternFont patternFont definefont pop
+3992 3693 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+ww 32 0.598214 put
+wp 32 (
+newpath
+2242 2720 M
+521 0 1022 -476 1022 -1060 C
+0 -605 -508 -1052 -1065 -1052 C
+-571 0 -1205 404 -1205 981 C
+0 799 549 1131 1248 1131 C
+372 3412 M
+-54 -354 -109 -735 -109 -1204 C
+0 -194 0 -403 57 -627 C
+0 -1045 898 -1613 1844 -1613 C
+994 0 1780 719 1780 1728 C
+0 1017 -715 1664 -1702 1664 C
+-332 0 -777 -96 -1221 -530 C
+0 835 423 1810 1248 1810 C
+431 0 868 -239 903 -640 C
+644 0 L
+0 793 -714 1280 -1561 1280 C
+-1037 0 -1680 -858 -1883 -1868 C
+closepath
+) put
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 6 9 32 11] 4046 3694 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 6 9 32 11] 3979 3694 (LEFT) 0 cxshow
+3978 3693 4046 3693 2 DLS
+/PatternFont patternFont definefont pop
+3992 3593 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 6 9 31 11] 4046 3594 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 6 9 31 11] 3979 3594 (LEFT) 0 cxshow
+3978 3592 4046 3592 2 DLS
+/PatternFont patternFont definefont pop
+3313 3932 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3313 3241 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 6 9 25 11] 3353 3242 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 6 9 25 11] 3287 3933 (LEFT) 0 cxshow
+3313 3241 3353 3241 2 DLS
+3285 3931 3313 3931 2 DLS
+/PatternFont patternFont definefont pop
+2620 4095 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 7 put
+wo 8 7 put
+wo 9 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 6 9 21 11] 2660 4096 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 7 put
+wo 8 7 put
+wo 9 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 6 9 21 11] 2594 4096 (LEFT) 0 cxshow
+2593 4095 2661 4095 2 DLS
+/PatternFont patternFont definefont pop
+2770 4095 1.00 1.00 10 0 360 0 3 FA
+2701 4095 2837 4095 2 DLS
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 7 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 21 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 1 3 18 8 3 18 19 14 14 15 16] 2298 4096 (LEFT) 0 cxshow
+2297 4095 2552 4095 2 DLS
+/PatternFont patternFont definefont pop
+3490 3769 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3490 3693 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 7 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 10 11 12 13 14 14 15 16 6 7 2 1 1 8 9 21 11 12 17 5 8 3 18 21 19 14 14 15 16] 3491 3299 (RIGHT) 0 cxshow
+3489 3291 3489 3869 2 DLS
+3443 3291 3489 3291 2 DLS
+3489 3693 3584 3693 2 DLS
+3489 3768 3584 3768 2 DLS
+3489 3869 3530 3869 2 DLS
+/PatternFont patternFont definefont pop
+3327 4045 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+2634 3618 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 7 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 21 9 25 11] 5974 2878 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 7 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 21 9 25 11] 4752 3569 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 7 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 21 9 25 11] 3353 4046 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 7 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 21 9 25 11] 2660 3619 (RIGHT) 0 cxshow
+2633 3618 2661 3618 2 DLS
+3326 4044 3353 4044 2 DLS
+/PatternFont patternFont definefont pop
+3327 3970 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+1982 3656 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+2634 3543 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 7 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 21 9 10 11] 4752 3493 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 7 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 21 9 10 11] 3353 3970 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 7 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 21 9 10 11] 2660 3543 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 7 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 21 9 10 11] 2008 3656 (RIGHT) 0 cxshow
+2633 3542 2661 3542 2 DLS
+1981 3655 2009 3655 2 DLS
+3326 3969 3353 3969 2 DLS
+/PatternFont patternFont definefont pop
+4019 3744 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+1982 3580 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+1629 3568 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3327 3304 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 7 put
+wo 6 7 put
+wo 7 7 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 21 9 21 11] 4046 3744 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 7 put
+wo 6 7 put
+wo 7 7 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 21 9 21 11] 3353 3305 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 7 put
+wo 6 7 put
+wo 7 7 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 21 9 21 11] 2008 3581 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 7 put
+wo 6 7 put
+wo 7 7 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 21 9 21 11] 1655 3569 (RIGHT) 0 cxshow
+3326 3304 3353 3304 2 DLS
+1628 3567 1655 3567 2 DLS
+1981 3580 2009 3580 2 DLS
+4019 3743 4046 3743 2 DLS
+/PatternFont patternFont definefont pop
+2634 4145 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4019 3643 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+1629 3492 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+1629 3492 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 7 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 21 9 20 11] 4046 3644 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 7 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 21 9 20 11] 2660 4146 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 7 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 21 9 20 11] 1655 3493 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 7 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 21 9 20 11] 6654 2200 (RIGHT) 0 cxshow
+1628 3492 1655 3492 2 DLS
+4019 3643 4046 3643 2 DLS
+2633 4145 2661 4145 2 DLS
+/PatternFont patternFont definefont pop
+3476 3944 1.00 1.00 10 0 360 0 3 FA
+3476 3517 3476 3957 2 DLS
+3476 3944 3530 3944 2 DLS
+3443 3957 3476 3957 2 DLS
+/PatternFont patternFont definefont pop
+4033 3718 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4033 3618 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 10 9 25 11] 5974 2853 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 10 9 25 11] 4752 3468 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 10 9 25 11] 4046 3719 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 10 9 25 11] 4046 3619 (RIGHT) 0 cxshow
+4032 3618 4046 3618 2 DLS
+4032 3718 4046 3718 2 DLS
+/PatternFont patternFont definefont pop
+2648 4120 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3340 3944 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3340 3279 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 10 9 10 11] 4752 3543 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 10 9 10 11] 3353 3945 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 10 9 10 11] 3353 3280 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 10 9 10 11] 2660 4121 (RIGHT) 0 cxshow
+3340 3279 3353 3279 2 DLS
+3340 3944 3353 3944 2 DLS
+2647 4120 2661 4120 2 DLS
+/PatternFont patternFont definefont pop
+3340 4020 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+1996 3555 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+2648 3518 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+1615 3467 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 14 put
+wo 6 7 put
+wo 7 7 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 10 9 21 11] 3353 4021 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 14 put
+wo 6 7 put
+wo 7 7 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 10 9 21 11] 2660 3518 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 14 put
+wo 6 7 put
+wo 7 7 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 10 9 21 11] 2008 3556 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 14 put
+wo 6 7 put
+wo 7 7 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 10 9 21 11] 1655 3468 (RIGHT) 0 cxshow
+1615 3467 1655 3467 2 DLS
+2647 3517 2661 3517 2 DLS
+1995 3555 2009 3555 2 DLS
+3340 4019 3353 4019 2 DLS
+/PatternFont patternFont definefont pop
+1996 3631 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+2648 3593 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+1615 3543 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+1615 3543 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 10 9 20 11] 2660 3594 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 10 9 20 11] 2008 3631 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 10 9 20 11] 1655 3543 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 10 9 20 11] 6654 2175 (RIGHT) 0 cxshow
+1615 3542 1655 3542 2 DLS
+2647 3592 2661 3592 2 DLS
+1995 3630 2009 3630 2 DLS
+/PatternFont patternFont definefont pop
+2131 3568 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+2186 3555 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 7 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 21 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 17 5 8 3 18 10 19 14 14 15 16] 2133 3562 (RIGHT) 0 cxshow
+2131 3555 2131 4095 2 DLS
+2185 3429 2185 3555 2 DLS
+2185 3429 2212 3429 2 DLS
+2131 3555 2212 3555 2 DLS
+2099 3567 2131 3567 2 DLS
+2131 4095 2158 4095 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 7 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 10 11 12 13 14 14 15 16 6 7 2 1 1 8 9 21 11 12 1 3 18 8 3 18 19 14 14 15 16] 3912 3600 (RIGHT) 0 cxshow
+3910 3592 3910 3844 2 DLS
+3910 3592 3937 3592 2 DLS
+3669 3844 3910 3844 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+ww 33 0.598214 put
+wp 33 (
+newpath
+887 5216 M
+-473 -2842 L
+588 -64 L
+166 340 513 474 1178 474 C
+585 0 1148 -488 1148 -1085 C
+0 -653 -578 -1091 -1221 -1091 C
+-722 0 -1177 301 -1177 768 C
+-674 0 L
+0 -951 847 -1408 1822 -1408 C
+1069 0 1879 669 1879 1729 C
+0 1109 -759 1727 -1776 1727 C
+-355 0 -615 -44 -998 -191 C
+231 1343 L
+2287 0 L
+0 640 L
+-2814 0 L
+closepath
+) put
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 20 7 0 1 2 3 4 5 6 7 2 1 1 8 7 33 7 7 13 14 14 15 16 6 7 2 1 1 8 7 20 7 7 0 13 16 16 26 19 14 14 15 16] 6344 2596 (RIGHT) 0 cxshow
+6341 2588 6341 2651 2 DLS
+6341 2588 6369 2588 2 DLS
+6323 2651 6341 2651 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 21 7 0 1 2 3 4 5 6 7 2 1 1 8 7 33 7 7 13 14 14 15 16 6 7 2 1 1 8 7 20 7 7 0 13 16 16 26 19 14 14 15 16] 6344 2570 (RIGHT) 0 cxshow
+6341 2563 6341 2575 2 DLS
+6341 2563 6369 2563 2 DLS
+6323 2575 6341 2575 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 10 7 0 1 2 3 4 5 6 7 2 1 1 8 7 33 7 7 13 14 14 15 16 6 7 2 1 1 8 7 20 7 7 0 13 16 16 26 19 14 14 15 16] 6344 2508 (RIGHT) 0 cxshow
+6341 2500 6341 2538 2 DLS
+6323 2500 6341 2500 2 DLS
+6341 2538 6369 2538 2 DLS
+5065 3216 5092 3216 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 10 7 0 1 2 3 4 5 6 7 2 1 1 8 7 25 7 7 13 14 14 15 16 6 7 2 1 1 8 7 21 7 7 0 13 16 16 26 19 14 14 15 16] 5067 3161 (RIGHT) 0 cxshow
+5065 3153 5065 3191 2 DLS
+5046 3153 5065 3153 2 DLS
+5065 3191 5092 3191 2 DLS
+/PatternFont patternFont definefont pop
+6586 2563 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 7 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 33 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 0 13 16 16 26 19 14 14 15 16] 6588 2294 (RIGHT) 0 cxshow
+6586 2287 6586 2563 2 DLS
+6586 2287 6708 2287 2 DLS
+6507 2563 6708 2563 2 DLS
+4861 2827 6178 2827 2 DLS
+5459 2739 6178 2739 2 DLS
+/PatternFont patternFont definefont pop
+6559 2463 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 20 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 1 3 18 8 3 18 19 14 14 15 16] 6561 2244 (RIGHT) 0 cxshow
+6559 2236 6559 3040 2 DLS
+6559 2236 6708 2236 2 DLS
+6559 2462 6708 2462 2 DLS
+6277 3040 6559 3040 2 DLS
+/PatternFont patternFont definefont pop
+6627 2413 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 25 11 12 13 14 14 15 16 6 7 2 1 1 8 9 10 11 12 1 3 18 8 3 18 19 14 14 15 16] 6629 2369 (RIGHT) 0 cxshow
+6627 2362 6627 2814 2 DLS
+6627 2362 6708 2362 2 DLS
+6627 2412 6708 2412 2 DLS
+6277 2814 6627 2814 2 DLS
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 7 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 7 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 25 11 12 13 14 14 15 16 6 7 2 1 1 8 9 21 11 12 0 13 16 16 26 19 14 14 15 16] 5232 3217 (LEFT) 0 cxshow
+5231 3216 5309 3216 2 DLS
+4875 2801 6178 2801 2 DLS
+/PatternFont patternFont definefont pop
+6790 2287 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 7 put
+wo 8 7 put
+wo 9 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 21 21 11] 6750 2288 (LEFT) 0 cxshow
+6749 2287 6790 2287 2 DLS
+/PatternFont patternFont definefont pop
+5962 2814 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 7 put
+wo 8 14 put
+wo 9 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 21 20 11] 5974 2815 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 7 put
+wo 8 14 put
+wo 9 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 21 20 11] 5922 3292 (LEFT) 0 cxshow
+5961 2814 5975 2814 2 DLS
+/PatternFont patternFont definefont pop
+5962 2789 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+ww 34 0.589286 put
+wp 34 (
+newpath
+2036 4640 M
+732 0 1164 -383 1164 -1120 C
+0 -701 -586 -992 -1223 -992 C
+-702 0 -1105 376 -1105 999 C
+0 681 425 1113 1164 1113 C
+3916 3527 M
+-120 1147 -656 1753 -1900 1753 C
+-1100 0 -1760 -675 -1760 -1717 C
+0 -1105 667 -1675 1721 -1675 C
+462 0 1062 148 1287 520 C
+0 -823 -174 -1800 -1345 -1800 C
+-417 0 -835 141 -952 576 C
+-647 0 L
+0 -821 735 -1216 1615 -1216 C
+1673 0 2003 1176 2003 2501 C
+0 540 L
+0 185 0 355 -22 518 C
+closepath
+) put
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 34 11] 5974 2790 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 34 11] 5922 3280 (LEFT) 0 cxshow
+5961 2789 5975 2789 2 DLS
+/PatternFont patternFont definefont pop
+5364 3216 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+ww 35 0.562500 put
+wp 35 (
+newpath
+192 5184 M
+0 -640 L
+2767 0 L
+-1018 -1601 -1448 -2719 -1792 -4544 C
+659 0 L
+366 1854 746 2972 1893 4530 C
+0 654 L
+-3527 0 L
+closepath
+) put
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 35 11] 5390 3217 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 35 11] 5351 3217 (LEFT) 0 cxshow
+5350 3216 5391 3216 2 DLS
+/PatternFont patternFont definefont pop
+6600 2488 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 7 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 7 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 21 11 12 13 14 14 15 16 6 7 2 1 1 8 9 21 11 12 1 3 18 8 3 18 19 14 14 15 16] 6602 2319 (RIGHT) 0 cxshow
+6600 2312 6600 2965 2 DLS
+6600 2312 6708 2312 2 DLS
+6600 2487 6708 2487 2 DLS
+6277 2965 6600 2965 2 DLS
+/PatternFont patternFont definefont pop
+6084 2865 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+6193 2664 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 33 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 17 5 8 3 18 21 19 14 14 15 16] 6086 2671 (RIGHT) 0 cxshow
+6083 2663 6083 3140 2 DLS
+6192 2588 6192 2663 2 DLS
+6192 2588 6233 2588 2 DLS
+6083 2663 6233 2663 2 DLS
+6065 2864 6083 2864 2 DLS
+6083 3140 6178 3140 2 DLS
+/PatternFont patternFont definefont pop
+6641 2513 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 33 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 1 3 18 8 3 18 19 14 14 15 16] 6642 2395 (RIGHT) 0 cxshow
+6640 2387 6640 3115 2 DLS
+6640 2387 6708 2387 2 DLS
+6640 2513 6708 2513 2 DLS
+6317 3115 6640 3115 2 DLS
+4929 3166 4956 3166 2 DLS
+/PatternFont patternFont definefont pop
+4943 3216 1.00 1.00 10 0 360 0 3 FA
+4942 3140 4942 3216 2 DLS
+4942 3140 4956 3140 2 DLS
+4182 3216 4956 3216 2 DLS
+/PatternFont patternFont definefont pop
+6777 2513 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 7 put
+wo 8 7 put
+wo 9 7 put
+wo 10 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 6 9 21 21 11] 6750 2514 (LEFT) 0 cxshow
+6749 2513 6776 2513 2 DLS
+/PatternFont patternFont definefont pop
+6777 2438 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 7 put
+wo 8 7 put
+wo 9 14 put
+wo 10 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 6 9 21 20 11] 6750 2439 (LEFT) 0 cxshow
+6749 2437 6776 2437 2 DLS
+/PatternFont patternFont definefont pop
+6777 2413 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+ww 36 0.607143 put
+wp 36 (
+newpath
+2916 4354 M
+163 -148 220 -366 220 -591 C
+0 -487 -412 -755 -1015 -755 C
+-603 0 -1015 233 -1015 776 C
+0 507 390 824 1015 824 C
+362 0 625 -85 795 -254 C
+3328 1413 M
+0 -507 -582 -837 -1207 -837 C
+-625 0 -1207 274 -1207 865 C
+0 647 462 991 1207 991 C
+504 0 745 -98 965 -359 C
+188 -189 242 -351 242 -660 C
+2120 -64 M
+1162 0 1895 486 1895 1474 C
+0 769 -328 973 -795 1288 C
+345 310 603 507 603 1106 C
+0 936 -765 1444 -1702 1444 C
+-965 0 -1673 -487 -1673 -1444 C
+0 -613 229 -833 539 -1106 C
+-419 -324 -731 -568 -731 -1288 C
+0 -1003 837 -1474 1864 -1474 C
+closepath
+) put
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 6 9 36 11] 6750 2413 (LEFT) 0 cxshow
+6749 2412 6776 2412 2 DLS
+/PatternFont patternFont definefont pop
+6777 2337 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 6 9 33 11] 6750 2338 (LEFT) 0 cxshow
+6749 2337 6776 2337 2 DLS
+/PatternFont patternFont definefont pop
+6777 2312 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 6 9 10 11] 6750 2313 (LEFT) 0 cxshow
+6749 2312 6776 2312 2 DLS
+/PatternFont patternFont definefont pop
+6777 2237 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 6 9 20 11] 6750 2238 (LEFT) 0 cxshow
+6749 2236 6776 2236 2 DLS
+/PatternFont patternFont definefont pop
+6152 2789 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+6220 2563 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+wo 42 7 put
+wo 43 14 put
+wo 44 7 put
+wo 45 14 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 33 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 22 15 5 23 2 24 25 12 0 13 16 16 26 27 5] 6153 2570 (RIGHT) 0 cxshow
+6151 2563 6151 3090 2 DLS
+6219 2487 6219 2563 2 DLS
+6219 2487 6233 2487 2 DLS
+6151 2563 6233 2563 2 DLS
+6015 2789 6151 2789 2 DLS
+6151 3090 6178 3090 2 DLS
+/PatternFont patternFont definefont pop
+6614 2538 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 10 11 12 13 14 14 15 16 6 7 2 1 1 8 9 10 11 12 1 3 18 8 3 18 19 14 14 15 16] 6615 2344 (RIGHT) 0 cxshow
+6613 2337 6613 2889 2 DLS
+6613 2337 6708 2337 2 DLS
+6613 2538 6708 2538 2 DLS
+6277 2889 6613 2889 2 DLS
+5472 2764 6178 2764 2 DLS
+/PatternFont patternFont definefont pop
+6763 2563 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+ww 37 0.723214 put
+wp 37 (
+newpath
+64 5248 M
+694 0 L
+1781 -4300 L
+1780 4300 L
+737 0 L
+-2231 -5248 L
+-630 0 L
+-2131 5248 L
+closepath
+) put
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 7 put
+wo 12 14 put
+wo 13 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 37 13 2 3 15 9 35 11] 6750 2564 (LEFT) 0 cxshow
+6749 2563 6763 2563 2 DLS
+/PatternFont patternFont definefont pop
+6763 2388 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 7 put
+wo 12 14 put
+wo 13 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 37 13 2 3 15 9 32 11] 6750 2388 (LEFT) 0 cxshow
+6749 2387 6763 2387 2 DLS
+/PatternFont patternFont definefont pop
+6763 2262 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 7 put
+wo 12 14 put
+wo 13 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 37 13 2 3 15 9 33 11] 6750 2263 (LEFT) 0 cxshow
+6749 2261 6763 2261 2 DLS
+/PatternFont patternFont definefont pop
+6763 2362 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 7 put
+wo 12 14 put
+wo 13 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 37 13 2 3 15 9 31 11] 6750 2363 (LEFT) 0 cxshow
+6749 2362 6763 2362 2 DLS
+/PatternFont patternFont definefont pop
+6763 2538 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 7 put
+wo 12 14 put
+wo 13 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 37 13 2 3 15 9 25 11] 6750 2539 (LEFT) 0 cxshow
+6749 2538 6763 2538 2 DLS
+/PatternFont patternFont definefont pop
+6763 2488 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 7 put
+wo 12 14 put
+wo 13 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 37 13 2 3 15 9 10 11] 6750 2489 (LEFT) 0 cxshow
+6749 2487 6763 2487 2 DLS
+/PatternFont patternFont definefont pop
+6763 2463 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 7 put
+wo 12 7 put
+wo 13 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 37 13 2 3 15 9 21 11] 6750 2464 (LEFT) 0 cxshow
+6749 2462 6763 2462 2 DLS
+/PatternFont patternFont definefont pop
+6763 2187 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+6763 2187 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 7 put
+wo 12 14 put
+wo 13 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 37 13 2 3 15 9 20 11] 6745 2187 (LEFT) 0 cxshow
+6744 2186 6763 2186 2 DLS
+/PatternFont patternFont definefont pop
+5527 3216 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+5446 3216 1.00 1.00 10 0 360 0 3 FA
+5445 2714 5445 3216 2 DLS
+5445 2714 6178 2714 2 DLS
+5431 3216 5540 3216 2 DLS
+/PatternFont patternFont definefont pop
+6111 2814 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+6206 2639 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 33 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 17 5 8 3 18 10 19 14 14 15 16] 6113 2646 (RIGHT) 0 cxshow
+6111 2638 6111 3115 2 DLS
+6206 2513 6206 2638 2 DLS
+6206 2513 6233 2513 2 DLS
+6111 2638 6233 2638 2 DLS
+6015 2814 6111 2814 2 DLS
+6111 3115 6178 3115 2 DLS
+/PatternFont patternFont definefont pop
+5934 2877 1.00 1.00 10 0 360 0 3 FA
+5934 2877 5975 2877 2 DLS
+/PatternFont patternFont definefont pop
+6417 2199 1.00 1.00 10 0 360 0 3 FA
+6416 2199 6654 2199 2 DLS
+/PatternFont patternFont definefont pop
+5948 2852 1.00 1.00 10 0 360 0 3 FA
+5948 2852 5975 2852 2 DLS
+/PatternFont patternFont definefont pop
+6417 2174 1.00 1.00 10 0 360 0 3 FA
+6416 2174 6654 2174 2 DLS
+/PatternFont patternFont definefont pop
+6573 2438 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 7 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 31 11 12 13 14 14 15 16 6 7 2 1 1 8 9 21 11 12 1 3 18 8 3 18 19 14 14 15 16] 6575 2269 (RIGHT) 0 cxshow
+6572 2261 6572 2739 2 DLS
+6572 2261 6708 2261 2 DLS
+6572 2437 6708 2437 2 DLS
+6317 2739 6572 2739 2 DLS
+6138 2877 6138 3090 2 DLS
+6138 2877 6178 2877 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 20 7 0 1 2 3 4 5 6 7 2 1 1 8 7 31 7 7 13 14 14 15 16 6 7 2 1 1 8 7 20 7 7 0 13 16 16 26 19 14 14 15 16] 5651 3550 (RIGHT) 0 cxshow
+5649 3542 5649 3605 2 DLS
+5649 3542 5676 3542 2 DLS
+5630 3605 5649 3605 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 21 7 0 1 2 3 4 5 6 7 2 1 1 8 7 31 7 7 13 14 14 15 16 6 7 2 1 1 8 7 20 7 7 0 13 16 16 26 19 14 14 15 16] 5651 3525 (RIGHT) 0 cxshow
+5649 3517 5649 3530 2 DLS
+5649 3517 5676 3517 2 DLS
+5630 3530 5649 3530 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 10 7 0 1 2 3 4 5 6 7 2 1 1 8 7 31 7 7 13 14 14 15 16 6 7 2 1 1 8 7 20 7 7 0 13 16 16 26 19 14 14 15 16] 5651 3462 (RIGHT) 0 cxshow
+5649 3454 5649 3492 2 DLS
+5630 3454 5649 3454 2 DLS
+5649 3492 5676 3492 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 20 7 0 1 2 3 4 5 6 7 2 1 1 8 7 25 7 7 13 14 14 15 16 6 7 2 1 1 8 7 20 7 7 0 13 16 16 26 19 14 14 15 16] 4401 3474 (RIGHT) 0 cxshow
+4399 3467 4399 3530 2 DLS
+4399 3467 4426 3467 2 DLS
+4381 3530 4399 3530 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 21 7 0 1 2 3 4 5 6 7 2 1 1 8 7 25 7 7 13 14 14 15 16 6 7 2 1 1 8 7 20 7 7 0 13 16 16 26 19 14 14 15 16] 4401 3449 (RIGHT) 0 cxshow
+4399 3442 4399 3454 2 DLS
+4399 3442 4426 3442 2 DLS
+4381 3454 4399 3454 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 10 7 0 1 2 3 4 5 6 7 2 1 1 8 7 25 7 7 13 14 14 15 16 6 7 2 1 1 8 7 20 7 7 0 13 16 16 26 19 14 14 15 16] 4401 3387 (RIGHT) 0 cxshow
+4399 3379 4399 3417 2 DLS
+4381 3379 4399 3379 2 DLS
+4399 3417 4426 3417 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 20 7 0 1 2 3 4 5 6 7 2 1 1 8 7 25 7 7 13 14 14 15 16 6 7 2 1 1 8 7 21 7 7 0 13 16 16 26 19 14 14 15 16] 5067 3248 (RIGHT) 0 cxshow
+5065 3241 5065 3304 2 DLS
+5065 3241 5092 3241 2 DLS
+5046 3304 5065 3304 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 20 7 0 1 2 3 4 5 6 7 2 1 1 8 7 31 7 7 13 14 14 15 16 6 7 2 1 1 8 7 21 7 7 0 13 16 16 26 19 14 14 15 16] 5651 3324 (RIGHT) 0 cxshow
+5649 3316 5649 3379 2 DLS
+5649 3316 5676 3316 2 DLS
+5630 3379 5649 3379 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 14 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 14 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 14 put
+wo 21 14 put
+wo 22 14 put
+wo 23 14 put
+wo 24 14 put
+wo 25 7 put
+wo 26 14 put
+wo 27 14 put
+wo 28 7 put
+wo 29 14 put
+wo 30 14 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 7 put
+wo 40 14 put
+wo 41 14 put
+wo 42 14 put
+wo 43 14 put
+wo 44 14 put
+wo 45 7 put
+/Use_Ratio 1 def
+[ 28 29 30 21 7 0 1 2 3 4 5 6 7 2 1 1 8 7 31 7 7 13 14 14 15 16 6 7 2 1 1 8 7 21 7 7 0 13 16 16 26 19 14 14 15 16] 5651 3299 (RIGHT) 0 cxshow
+5649 3291 5649 3304 2 DLS
+5649 3291 5676 3291 2 DLS
+5630 3304 5649 3304 2 DLS
+5649 3266 5676 3266 2 DLS
+/PatternFont patternFont definefont pop
+4861 3392 1.00 1.00 10 0 360 0 3 FA
+4793 3392 4902 3392 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 7 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 31 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 0 13 16 16 26 19 14 14 15 16] 5868 3286 (RIGHT) 0 cxshow
+5866 3279 5866 3517 2 DLS
+5866 3279 5880 3279 2 DLS
+5815 3517 5866 3517 2 DLS
+/PatternFont patternFont definefont pop
+5513 3241 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+5459 3241 1.00 1.00 10 0 360 0 3 FA
+5513 3241 5513 3366 2 DLS
+5431 3241 5540 3241 2 DLS
+5513 3366 5540 3366 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 31 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 1 3 18 8 3 18 19 14 14 15 16] 5298 3324 (RIGHT) 0 cxshow
+5296 3316 5296 3467 2 DLS
+5296 3316 5309 3316 2 DLS
+5041 3467 5296 3467 2 DLS
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 7 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 25 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 0 13 16 16 26 19 14 14 15 16] 4566 3443 (LEFT) 0 cxshow
+4565 3442 4644 3442 2 DLS
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 7 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 7 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 31 11 12 13 14 14 15 16 6 7 2 1 1 8 9 21 11 12 0 13 16 16 26 19 14 14 15 16] 5816 3292 (LEFT) 0 cxshow
+5815 3291 5880 3291 2 DLS
+/PatternFont patternFont definefont pop
+4210 3718 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4916 3317 1.00 1.00 10 0 360 0 3 FA
+4209 3316 4209 3731 2 DLS
+4915 3241 4915 3316 2 DLS
+4915 3241 4956 3241 2 DLS
+4209 3316 4956 3316 2 DLS
+4209 3718 4236 3718 2 DLS
+/PatternFont patternFont definefont pop
+5513 3593 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4861 3480 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 31 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 17 5 8 3 18 10 19 14 14 15 16] 4863 3474 (RIGHT) 0 cxshow
+4861 3467 4861 3592 2 DLS
+5513 3467 5513 3592 2 DLS
+4861 3467 4902 3467 2 DLS
+5513 3467 5540 3467 2 DLS
+4842 3479 4861 3479 2 DLS
+4861 3592 5540 3592 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 7 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 25 11 12 13 14 14 15 16 6 7 2 1 1 8 9 10 11 12 0 13 16 16 26 19 14 14 15 16] 5284 3248 (RIGHT) 0 cxshow
+5282 3241 5282 3379 2 DLS
+5282 3241 5309 3241 2 DLS
+4992 3379 5282 3379 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 7 put
+wo 35 14 put
+wo 36 14 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 10 11 12 13 14 14 15 16 6 7 2 1 1 8 9 10 11 12 0 13 16 16 26 19 14 14 15 16] 4619 3374 (RIGHT) 0 cxshow
+4616 3366 4616 3605 2 DLS
+4616 3366 4644 3366 2 DLS
+4326 3605 4616 3605 2 DLS
+/PatternFont patternFont definefont pop
+4875 3367 1.00 1.00 10 0 360 0 3 FA
+4793 3366 4902 3366 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 7 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 7 put
+wo 34 14 put
+wo 35 14 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 25 11 12 13 14 14 15 16 6 7 2 1 1 8 9 21 11 12 1 3 18 8 3 18 19 14 14 15 16] 4632 3462 (RIGHT) 0 cxshow
+4630 3454 4630 3693 2 DLS
+4630 3454 4644 3454 2 DLS
+4375 3693 4630 3693 2 DLS
+/PatternFont patternFont definefont pop
+5962 3292 1.00 1.00 10 0 360 0 3 FA
+5920 3291 5961 3291 2 DLS
+/PatternFont patternFont definefont pop
+5962 3279 1.00 1.00 10 0 360 0 3 FA
+5920 3279 5961 3279 2 DLS
+/PatternFont patternFont definefont pop
+5364 3241 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 36 11] 5390 3242 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 36 11] 5351 3242 (LEFT) 0 cxshow
+5350 3241 5391 3241 2 DLS
+/PatternFont patternFont definefont pop
+4698 3442 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 32 11] 4752 3443 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 32 11] 4686 3443 (LEFT) 0 cxshow
+4684 3442 4752 3442 2 DLS
+/PatternFont patternFont definefont pop
+4698 3367 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 33 11] 4752 3368 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 33 11] 4686 3368 (LEFT) 0 cxshow
+4684 3366 4752 3366 2 DLS
+/PatternFont patternFont definefont pop
+4277 3442 1.00 1.00 10 0 360 0 3 FA
+4277 3366 4277 3442 2 DLS
+4277 3366 4290 3366 2 DLS
+/PatternFont patternFont definefont pop
+4250 3543 1.00 1.00 10 0 360 0 3 FA
+4223 3542 4223 4032 2 DLS
+4250 3467 4250 3542 2 DLS
+4250 3467 4290 3467 2 DLS
+4223 3542 4290 3542 2 DLS
+/PatternFont patternFont definefont pop
+5527 3518 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4889 3442 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 14 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 14 put
+wo 37 14 put
+wo 38 7 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+wo 42 7 put
+wo 43 14 put
+wo 44 7 put
+wo 45 14 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 31 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 22 15 5 23 2 24 25 12 0 13 16 16 26 27 5] 4890 3449 (RIGHT) 0 cxshow
+4888 3442 4888 3517 2 DLS
+5527 3442 5527 3517 2 DLS
+4793 3442 4902 3442 2 DLS
+5527 3442 5540 3442 2 DLS
+4888 3517 5540 3517 2 DLS
+/PatternFont patternFont definefont pop
+4196 3693 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4929 3292 1.00 1.00 10 0 360 0 3 FA
+4195 3291 4195 3693 2 DLS
+4195 3291 4956 3291 2 DLS
+/PatternFont patternFont definefont pop
+4182 3668 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+5378 3317 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 6 9 34 11] 5390 3317 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 6 9 34 11] 5351 3317 (LEFT) 0 cxshow
+5350 3316 5391 3316 2 DLS
+/PatternFont patternFont definefont pop
+4712 3455 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4712 3392 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 6 9 35 11] 4752 3393 (RIGHT) 0 cxshow
+/SETFONT 13 def
+/SETANGLE 0 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 7 put
+wo 8 14 put
+wo 9 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 6 9 35 11] 4686 3456 (LEFT) 0 cxshow
+4712 3392 4752 3392 2 DLS
+4684 3454 4712 3454 2 DLS
+/PatternFont patternFont definefont pop
+5500 3317 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+5473 3317 1.00 1.00 10 0 360 0 3 FA
+5499 3316 5499 3392 2 DLS
+5431 3316 5540 3316 2 DLS
+5499 3392 5540 3392 2 DLS
+5527 3291 5540 3291 2 DLS
+/PatternFont patternFont definefont pop
+4726 3568 1.00 1.00 10 0 360 0 3 FA
+4725 3567 4752 3567 2 DLS
+/PatternFont patternFont definefont pop
+4726 3492 1.00 1.00 10 0 360 0 3 FA
+4725 3492 4752 3492 2 DLS
+/PatternFont patternFont definefont pop
+4264 3518 1.00 1.00 10 0 360 0 3 FA
+4263 3392 4263 3517 2 DLS
+4263 3392 4290 3392 2 DLS
+/PatternFont patternFont definefont pop
+4739 3467 1.00 1.00 10 0 360 0 3 FA
+4739 3467 4752 3467 2 DLS
+/PatternFont patternFont definefont pop
+4739 3543 1.00 1.00 10 0 360 0 3 FA
+4739 3542 4752 3542 2 DLS
+/PatternFont patternFont definefont pop
+5500 3618 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4875 3555 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 14 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 14 put
+wo 12 7 put
+wo 13 14 put
+wo 14 7 put
+wo 15 7 put
+wo 16 14 put
+wo 17 14 put
+wo 18 14 put
+wo 19 14 put
+wo 20 7 put
+wo 21 14 put
+wo 22 14 put
+wo 23 7 put
+wo 24 14 put
+wo 25 14 put
+wo 26 14 put
+wo 27 7 put
+wo 28 14 put
+wo 29 7 put
+wo 30 7 put
+wo 31 7 put
+wo 32 14 put
+wo 33 14 put
+wo 34 14 put
+wo 35 7 put
+wo 36 7 put
+wo 37 14 put
+wo 38 14 put
+wo 39 14 put
+wo 40 14 put
+wo 41 7 put
+/Use_Ratio 1 def
+[ 0 1 2 3 4 5 6 7 2 1 1 8 9 31 11 12 13 14 14 15 16 6 7 2 1 1 8 9 20 11 12 17 5 8 3 18 21 19 14 14 15 16] 4877 3500 (RIGHT) 0 cxshow
+4875 3492 4875 3618 2 DLS
+5499 3542 5499 3618 2 DLS
+4875 3492 4902 3492 2 DLS
+5499 3542 5540 3542 2 DLS
+4842 3555 4875 3555 2 DLS
+4875 3618 5540 3618 2 DLS
+10 SLW
+/PatternFont patternFont definefont pop
+5962 4271 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+5364 4271 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4698 4271 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4006 4271 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3299 4271 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+2607 4271 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+5962 4271 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+5364 4271 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4698 4271 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4006 4271 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3299 4271 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+2607 4271 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+5962 4271 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+5364 4271 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4698 4271 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4006 4271 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3299 4271 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+2607 4271 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+ww 38 0.241071 put
+wp 38 (
+newpath
+384 3840 M
+0 -768 L
+903 0 L
+0 768 L
+-903 0 L
+384 1280 M
+0 -768 L
+903 0 L
+0 768 L
+-903 0 L
+closepath
+) put
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 7 put
+wo 4 14 put
+wo 5 14 put
+wo 6 7 put
+wo 7 7 put
+wo 8 7 put
+wo 9 7 put
+wo 10 14 put
+wo 11 7 put
+/Use_Ratio 1 def
+[ 0 13 16 16 26 6 9 21 21 38 20 11] 1970 3525 (RIGHT) 0 cxshow
+1968 3517 1968 4270 2 DLS
+2606 3479 2606 4270 2 DLS
+3299 3216 3299 4270 2 DLS
+4005 3668 4005 4270 2 DLS
+4698 3366 4698 4270 2 DLS
+5364 3216 5364 4270 2 DLS
+5961 2789 5961 4270 2 DLS
+6790 2287 6790 4270 2 DLS
+1968 4270 6790 4270 2 DLS
+/PatternFont patternFont definefont pop
+5378 4258 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4712 4258 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3992 4258 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3313 4258 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+5378 4258 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4712 4258 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3992 4258 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3313 4258 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+5378 4258 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4712 4258 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3992 4258 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3313 4258 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 7 put
+wo 8 7 put
+wo 9 7 put
+wo 10 7 put
+wo 11 14 put
+wo 12 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 6 9 21 21 38 20 11] 2622 4102 (RIGHT) 0 cxshow
+2620 4095 2620 4258 2 DLS
+3313 3241 3313 4258 2 DLS
+3992 3592 3992 4258 2 DLS
+4712 3392 4712 4258 2 DLS
+5377 3316 5377 4258 2 DLS
+6776 2236 6776 4258 2 DLS
+2620 4258 6776 4258 2 DLS
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 14 put
+wo 1 14 put
+wo 2 7 put
+wo 3 14 put
+wo 4 14 put
+wo 5 7 put
+wo 6 14 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 14 put
+wo 11 7 put
+wo 12 14 put
+wo 13 7 put
+wo 14 14 put
+wo 15 7 put
+/Use_Ratio 1 def
+[ 1 3 18 8 3 18 37 13 2 3 15 9 35 38 20 11] 6765 2194 (RIGHT) 0 cxshow
+6763 2186 6763 2563 2 DLS
+6763 2186 6817 2186 2 DLS
+/PatternFont patternFont definefont pop
+1629 3492 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+5934 2199 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4726 2199 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4019 2199 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3327 2199 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+2634 2199 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+1982 2199 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+1629 3492 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+5934 2199 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4726 2199 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4019 2199 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3327 2199 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+2634 2199 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+1982 2199 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+5934 2199 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4726 2199 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4019 2199 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3327 2199 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+2634 2199 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+1982 2199 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+1629 3492 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 7 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 21 9 25 38 20 11] 1630 2206 (RIGHT) 0 cxshow
+1628 2199 1628 3567 2 DLS
+1981 2199 1981 3655 2 DLS
+2633 2199 2633 4145 2 DLS
+3326 2199 3326 4044 2 DLS
+4019 2199 4019 3743 2 DLS
+4725 2199 4725 3567 2 DLS
+5934 2199 5934 2877 2 DLS
+1628 2199 6416 2199 2 DLS
+1601 3492 1628 3492 2 DLS
+/PatternFont patternFont definefont pop
+5948 2174 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4739 2174 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4033 2174 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3340 2174 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+2648 2174 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+1996 2174 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+5948 2174 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4739 2174 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4033 2174 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3340 2174 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+2648 2174 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+1996 2174 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+5948 2174 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4739 2174 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+4033 2174 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+3340 2174 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+2648 2174 1.00 1.00 10 0 360 0 3 FA
+/PatternFont patternFont definefont pop
+1996 2174 1.00 1.00 10 0 360 0 3 FA
+/SETFONT 13 def
+/SETANGLE 270 def
+wo 0 7 put
+wo 1 14 put
+wo 2 14 put
+wo 3 14 put
+wo 4 7 put
+wo 5 14 put
+wo 6 7 put
+wo 7 14 put
+wo 8 7 put
+wo 9 14 put
+wo 10 7 put
+/Use_Ratio 1 def
+[ 17 5 8 3 18 10 9 25 38 20 11] 1617 2181 (RIGHT) 0 cxshow
+1615 2174 1615 3542 2 DLS
+1995 2174 1995 3630 2 DLS
+2647 2174 2647 4120 2 DLS
+3340 2174 3340 4019 2 DLS
+4032 2174 4032 3718 2 DLS
+4739 2174 4739 3542 2 DLS
+5948 2174 5948 2852 2 DLS
+1615 2174 6416 2174 2 DLS
+1601 3542 1615 3542 2 DLS
+5 SLW
+1561 3489 1561 3496 1579 3496 1588 3492 1579 3489 1561 3489 6 DLS
+1561 3540 1561 3546 1579 3546 1588 3543 1579 3540 1561 3540 6 DLS
+6831 2184 6831 2190 6849 2190 6858 2187 6849 2184 6831 2184 6 DLS
+6722 2563 6735 2563 2 DLS
+6722 2387 6735 2387 2 DLS
+6286 2500 1.09 1.00 21 270 450 DA
+6246 2478 6246 2522 2 DLS
+6246 2522 6286 2522 2 DLS
+6286 2478 6246 2478 2 DLS
+6286 2576 1.07 1.00 22 270 450 DA
+6246 2554 6246 2597 2 DLS
+6246 2597 6286 2597 2 DLS
+6286 2554 6246 2554 2 DLS
+6286 2651 1.07 1.00 22 270 450 DA
+6246 2629 6246 2673 2 DLS
+6246 2673 6286 2673 2 DLS
+6286 2629 6246 2629 2 DLS
+6382 2538 6391 2538 2 DLS
+6382 2563 6395 2563 2 DLS
+6382 2588 6391 2588 2 DLS
+6382 2563 1.00 2.76 12 270 450 DA
+6429 2598 1.08 1.00 69 270 330 DA
+6429 2529 1.08 1.00 69 30 90 DA
+6382 2597 6429 2597 2 DLS
+6429 2528 6382 2528 2 DLS
+6192 3090 6188 3090 2 DLS
+6192 3115 1 DLS
+6192 3140 6188 3140 2 DLS
+6180 3115 1.00 2.76 12 270 450 DA
+6192 3115 1.00 2.76 12 270 450 DA
+6239 3150 1.08 1.00 69 270 330 DA
+6239 3081 1.09 1.00 68 30 90 DA
+6192 3150 6239 3150 2 DLS
+6239 3081 6192 3081 2 DLS
+5988 2789 6002 2789 2 DLS
+5988 2814 6002 2814 2 DLS
+6028 2865 1.07 1.00 22 270 450 DA
+5988 2842 5988 2886 2 DLS
+5988 2886 6028 2886 2 DLS
+6028 2842 5988 2842 2 DLS
+6722 2287 6735 2287 2 DLS
+6722 2513 6735 2513 2 DLS
+6722 2261 6735 2261 2 DLS
+5593 3229 1.07 1.00 22 270 450 DA
+5554 3206 5554 3250 2 DLS
+5554 3250 5593 3250 2 DLS
+5593 3206 5554 3206 2 DLS
+5593 3304 1.07 1.00 22 270 450 DA
+5554 3282 5554 3325 2 DLS
+5554 3325 5593 3325 2 DLS
+5593 3282 5554 3282 2 DLS
+5593 3379 1.09 1.00 21 270 450 DA
+5554 3357 5554 3401 2 DLS
+5554 3401 5593 3401 2 DLS
+5593 3357 5554 3357 2 DLS
+5690 3266 5698 3266 2 DLS
+5690 3291 5702 3291 2 DLS
+5690 3316 5698 3316 2 DLS
+5690 3291 1.00 2.88 12 270 450 DA
+5737 3326 1.08 1.00 69 270 330 DA
+5737 3257 1.08 1.00 69 30 90 DA
+5690 3325 5737 3325 2 DLS
+5737 3257 5690 3257 2 DLS
+6192 2714 6188 2714 2 DLS
+6192 2739 1 DLS
+6192 2764 6188 2764 2 DLS
+6180 2739 1.00 2.76 12 270 450 DA
+6192 2739 1.00 2.76 12 270 450 DA
+6239 2773 1.09 1.00 68 270 330 DA
+6239 2705 1.08 1.00 69 30 90 DA
+6192 2773 6239 2773 2 DLS
+6239 2704 6192 2704 2 DLS
+5404 3216 5418 3216 2 DLS
+5404 3241 5418 3241 2 DLS
+5404 3316 5418 3316 2 DLS
+5893 3291 5907 3291 2 DLS
+6722 2437 6735 2437 2 DLS
+5593 3455 1.07 1.00 22 270 450 DA
+5554 3432 5554 3476 2 DLS
+5554 3476 5593 3476 2 DLS
+5593 3432 5554 3432 2 DLS
+5593 3530 1.07 1.00 22 270 450 DA
+5554 3508 5554 3551 2 DLS
+5554 3551 5593 3551 2 DLS
+5593 3508 5554 3508 2 DLS
+5593 3605 1.09 1.00 21 270 450 DA
+5554 3583 5554 3627 2 DLS
+5554 3627 5593 3627 2 DLS
+5593 3583 5554 3583 2 DLS
+5690 3492 5698 3492 2 DLS
+5690 3517 5702 3517 2 DLS
+5690 3542 5698 3542 2 DLS
+5690 3517 1.00 2.88 12 270 450 DA
+5737 3552 1.08 1.00 69 270 330 DA
+5737 3483 1.08 1.00 69 30 90 DA
+5690 3551 5737 3551 2 DLS
+5737 3483 5690 3483 2 DLS
+4915 3442 4911 3442 2 DLS
+4915 3467 1 DLS
+4915 3492 4911 3492 2 DLS
+4903 3467 1.00 2.76 12 270 450 DA
+4915 3467 1.00 2.76 12 270 450 DA
+4963 3502 1.07 1.00 69 270 330 DA
+4963 3433 1.07 1.00 69 30 90 DA
+4915 3501 4963 3501 2 DLS
+4963 3432 4915 3432 2 DLS
+4766 3442 4779 3442 2 DLS
+4805 3480 1.07 1.00 22 270 450 DA
+4766 3458 4766 3501 2 DLS
+4766 3501 4805 3501 2 DLS
+4805 3458 4766 3458 2 DLS
+4805 3555 1.07 1.00 22 270 450 DA
+4766 3533 4766 3577 2 DLS
+4766 3577 4805 3577 2 DLS
+4805 3533 4766 3533 2 DLS
+5893 3279 5907 3279 2 DLS
+5323 3316 5336 3316 2 DLS
+6722 2362 6735 2362 2 DLS
+4955 3379 1.09 1.00 21 270 450 DA
+4915 3357 4915 3401 2 DLS
+4915 3401 4955 3401 2 DLS
+4955 3357 4915 3357 2 DLS
+6192 2801 6191 2801 2 DLS
+6192 2827 6191 2827 2 DLS
+6185 2814 1.00 2.69 8 270 450 DA
+6192 2814 1.00 2.87 7 270 450 DA
+6222 2836 1.09 1.00 43 270 330 DA
+6222 2792 1.09 1.00 43 30 90 DA
+6192 2836 6222 2836 2 DLS
+6222 2792 6192 2792 2 DLS
+4766 3366 4779 3366 2 DLS
+4766 3392 4779 3392 2 DLS
+5323 3241 5336 3241 2 DLS
+6722 2412 6735 2412 2 DLS
+5009 3153 1.09 1.00 21 270 450 DA
+4970 3131 4970 3175 2 DLS
+4970 3175 5009 3175 2 DLS
+5009 3131 4970 3131 2 DLS
+5009 3229 1.07 1.00 22 270 450 DA
+4970 3206 4970 3250 2 DLS
+4970 3250 5009 3250 2 DLS
+5009 3206 4970 3206 2 DLS
+5009 3304 1.07 1.00 22 270 450 DA
+4970 3282 4970 3325 2 DLS
+4970 3325 5009 3325 2 DLS
+5009 3282 4970 3282 2 DLS
+5105 3191 5114 3191 2 DLS
+5105 3216 5118 3216 2 DLS
+5105 3241 5114 3241 2 DLS
+5106 3216 1.00 2.88 12 270 450 DA
+5153 3250 1.09 1.00 68 270 330 DA
+5153 3182 1.08 1.00 69 30 90 DA
+5105 3250 5153 3250 2 DLS
+5153 3181 5105 3181 2 DLS
+4250 3668 4246 3668 2 DLS
+4250 3693 1 DLS
+4250 3718 4246 3718 2 DLS
+4237 3693 1.00 2.76 12 270 450 DA
+4250 3693 1.00 2.76 12 270 450 DA
+4297 3728 1.08 1.00 69 270 330 DA
+4297 3659 1.08 1.00 69 30 90 DA
+4250 3727 4297 3727 2 DLS
+4297 3658 4250 3658 2 DLS
+4060 3668 4073 3668 2 DLS
+4060 3693 4073 3693 2 DLS
+4099 3731 1.07 1.00 22 270 450 DA
+4060 3709 4060 3752 2 DLS
+4060 3752 4099 3752 2 DLS
+4099 3709 4060 3709 2 DLS
+5323 3216 5336 3216 2 DLS
+4657 3454 4671 3454 2 DLS
+4344 3379 1.12 1.00 21 270 450 DA
+4304 3357 4304 3401 2 DLS
+4304 3401 4343 3401 2 DLS
+4343 3357 4304 3357 2 DLS
+4344 3455 1.09 1.00 22 270 450 DA
+4304 3432 4304 3476 2 DLS
+4304 3476 4343 3476 2 DLS
+4343 3432 4304 3432 2 DLS
+4344 3530 1.09 1.00 22 270 450 DA
+4304 3508 4304 3551 2 DLS
+4304 3551 4343 3551 2 DLS
+4343 3508 4304 3508 2 DLS
+4440 3417 4448 3417 2 DLS
+4440 3442 4452 3442 2 DLS
+4440 3467 4448 3467 2 DLS
+4440 3442 1.00 2.76 12 270 450 DA
+4487 3476 1.09 1.00 68 270 330 DA
+4487 3408 1.08 1.00 69 30 90 DA
+4440 3476 4487 3476 2 DLS
+4487 3407 4440 3407 2 DLS
+3543 3919 3540 3919 2 DLS
+3543 3944 1 DLS
+3543 3969 3540 3969 2 DLS
+3531 3944 1.00 2.76 12 270 450 DA
+3544 3944 1.00 2.88 12 270 450 DA
+3591 3979 1.08 1.00 69 270 330 DA
+3591 3910 1.08 1.00 69 30 90 DA
+3543 3978 3591 3978 2 DLS
+3591 3910 3543 3910 2 DLS
+3367 3919 3380 3919 2 DLS
+3406 3957 1.07 1.00 22 270 450 DA
+3367 3935 3367 3978 2 DLS
+3367 3978 3406 3978 2 DLS
+3406 3935 3367 3935 2 DLS
+3406 4032 1.09 1.00 21 270 450 DA
+3367 4010 3367 4054 2 DLS
+3367 4054 3406 4054 2 DLS
+3406 4010 3367 4010 2 DLS
+4657 3442 4671 3442 2 DLS
+3951 3693 3965 3693 2 DLS
+6722 2538 6735 2538 2 DLS
+4289 3605 1.09 1.00 21 270 450 DA
+4250 3583 4250 3627 2 DLS
+4250 3627 4289 3627 2 DLS
+4289 3583 4250 3583 2 DLS
+6192 2877 6191 2877 2 DLS
+6192 2902 6191 2902 2 DLS
+6185 2890 1.00 2.75 8 270 450 DA
+6192 2890 1.00 2.93 7 270 450 DA
+6222 2911 1.09 1.00 43 270 330 DA
+6222 2868 1.08 1.00 44 30 90 DA
+6192 2911 6222 2911 2 DLS
+6222 2867 6192 2867 2 DLS
+4060 3592 4073 3592 2 DLS
+4099 3630 1.09 1.00 21 270 450 DA
+4060 3608 4060 3652 2 DLS
+4060 3652 4099 3652 2 DLS
+4099 3608 4060 3608 2 DLS
+4657 3366 4671 3366 2 DLS
+6722 2337 6735 2337 2 DLS
+3637 3605 1.09 1.00 21 270 450 DA
+3598 3583 3598 3627 2 DLS
+3598 3627 3637 3627 2 DLS
+3637 3583 3598 3583 2 DLS
+3637 3681 1.07 1.00 22 270 450 DA
+3598 3658 3598 3702 2 DLS
+3598 3702 3637 3702 2 DLS
+3637 3658 3598 3658 2 DLS
+3637 3756 1.07 1.00 22 270 450 DA
+3598 3734 3598 3778 2 DLS
+3598 3778 3637 3778 2 DLS
+3637 3734 3598 3734 2 DLS
+3734 3643 3742 3643 2 DLS
+3734 3668 3746 3668 2 DLS
+3734 3693 3742 3693 2 DLS
+3734 3668 1.00 2.88 12 270 450 DA
+3781 3702 1.09 1.00 68 270 330 DA
+3781 3634 1.08 1.00 69 30 90 DA
+3734 3702 3781 3702 2 DLS
+3781 3633 3734 3633 2 DLS
+3543 3818 3540 3818 2 DLS
+3543 3844 1 DLS
+3543 3869 3540 3869 2 DLS
+3531 3844 1.00 2.72 12 270 450 DA
+3544 3844 1.00 2.83 12 270 450 DA
+3591 3878 1.09 1.00 68 270 330 DA
+3591 3809 1.09 1.00 68 30 90 DA
+3543 3878 3591 3878 2 DLS
+3591 3809 3543 3809 2 DLS
+3367 3216 3380 3216 2 DLS
+3367 3241 3380 3241 2 DLS
+3406 3291 1.09 1.00 21 270 450 DA
+3367 3269 3367 3313 2 DLS
+3367 3313 3406 3313 2 DLS
+3406 3269 3367 3269 2 DLS
+3951 3668 3965 3668 2 DLS
+3951 3592 3965 3592 2 DLS
+2945 3882 1.09 1.00 22 270 450 DA
+2905 3859 2905 3903 2 DLS
+2905 3903 2944 3903 2 DLS
+2944 3859 2905 3859 2 DLS
+2945 3957 1.09 1.00 22 270 450 DA
+2905 3935 2905 3978 2 DLS
+2905 3978 2944 3978 2 DLS
+2944 3935 2905 3935 2 DLS
+2945 4032 1.12 1.00 21 270 450 DA
+2905 4010 2905 4054 2 DLS
+2905 4054 2944 4054 2 DLS
+2944 4010 2905 4010 2 DLS
+3041 3919 3049 3919 2 DLS
+3041 3944 3053 3944 2 DLS
+3041 3969 3049 3969 2 DLS
+3041 3944 1.00 2.76 12 270 450 DA
+3088 3979 1.08 1.00 69 270 330 DA
+3088 3910 1.08 1.00 69 30 90 DA
+3041 3978 3088 3978 2 DLS
+3088 3910 3041 3910 2 DLS
+2851 4170 2847 4170 2 DLS
+2851 4195 1 DLS
+2851 4220 2847 4220 2 DLS
+2838 4195 1.00 2.76 12 270 450 DA
+2851 4195 1.00 2.76 12 270 450 DA
+2898 4230 1.08 1.00 69 270 330 DA
+2898 4161 1.08 1.00 69 30 90 DA
+2851 4230 2898 4230 2 DLS
+2898 4161 2851 4161 2 DLS
+2674 3479 2688 3479 2 DLS
+2714 3530 1.09 1.00 22 270 450 DA
+2674 3508 2674 3551 2 DLS
+2674 3551 2714 3551 2 DLS
+2714 3508 2674 3508 2 DLS
+2714 3605 1.12 1.00 21 270 450 DA
+2674 3583 2674 3627 2 DLS
+2674 3627 2714 3627 2 DLS
+2714 3583 2674 3583 2 DLS
+3258 3944 3272 3944 2 DLS
+3258 3931 3272 3931 2 DLS
+6722 2487 6735 2487 2 DLS
+2890 4108 1.07 1.00 22 270 450 DA
+2851 4085 2851 4129 2 DLS
+2851 4129 2890 4129 2 DLS
+2890 4085 2851 4085 2 DLS
+6192 2952 6191 2952 2 DLS
+6192 2977 6191 2977 2 DLS
+6185 2965 1.00 2.75 8 270 450 DA
+6192 2965 1.00 2.93 7 270 450 DA
+6222 2987 1.08 1.00 44 270 330 DA
+6222 2943 1.09 1.00 43 30 90 DA
+6192 2986 6222 2986 2 DLS
+6222 2943 6192 2943 2 DLS
+2674 4095 2688 4095 2 DLS
+2714 4133 1.09 1.00 22 270 450 DA
+2674 4110 2674 4154 2 DLS
+2674 4154 2714 4154 2 DLS
+2714 4110 2674 4110 2 DLS
+3258 3844 3272 3844 2 DLS
+6722 2312 6735 2312 2 DLS
+2265 3417 1.07 1.00 22 270 450 DA
+2226 3395 2226 3438 2 DLS
+2226 3438 2265 3438 2 DLS
+2265 3395 2226 3395 2 DLS
+2265 3492 1.09 1.00 21 270 450 DA
+2226 3470 2226 3514 2 DLS
+2226 3514 2265 3514 2 DLS
+2265 3470 2226 3470 2 DLS
+2265 3568 1.07 1.00 22 270 450 DA
+2226 3545 2226 3589 2 DLS
+2226 3589 2265 3589 2 DLS
+2265 3545 2226 3545 2 DLS
+2362 3454 2370 3454 2 DLS
+2362 3479 2374 3479 2 DLS
+2362 3505 2370 3505 2 DLS
+2362 3480 1.00 2.72 12 270 450 DA
+2409 3514 1.09 1.00 68 270 330 DA
+2409 3445 1.09 1.00 68 30 90 DA
+2362 3514 2409 3514 2 DLS
+2409 3445 2362 3445 2 DLS
+2172 4070 2168 4070 2 DLS
+2172 4095 1 DLS
+2172 4120 2168 4120 2 DLS
+2159 4095 1.00 2.76 12 270 450 DA
+2172 4095 1.00 2.88 12 270 450 DA
+2219 4129 1.09 1.00 68 270 330 DA
+2219 4061 1.08 1.00 69 30 90 DA
+2172 4129 2219 4129 2 DLS
+2219 4060 2172 4060 2 DLS
+2022 3517 2036 3517 2 DLS
+2062 3568 1.09 1.00 22 270 450 DA
+2022 3545 2022 3589 2 DLS
+2022 3589 2062 3589 2 DLS
+2062 3545 2022 3545 2 DLS
+2062 3643 1.09 1.00 22 270 450 DA
+2022 3621 2022 3664 2 DLS
+2022 3664 2062 3664 2 DLS
+2062 3621 2022 3621 2 DLS
+2566 3479 2579 3479 2 DLS
+2566 4095 2579 4095 2 DLS
+6722 2462 6735 2462 2 DLS
+1844 3517 1.09 1.00 21 270 450 DA
+1805 3495 1805 3539 2 DLS
+1805 3539 1844 3539 2 DLS
+1844 3495 1805 3495 2 DLS
+6192 3027 6191 3027 2 DLS
+6192 3053 6191 3053 2 DLS
+6185 3040 1.00 2.69 8 270 450 DA
+6192 3040 1.00 2.87 7 270 450 DA
+6222 3062 1.09 1.00 43 270 330 DA
+6222 3018 1.09 1.00 43 30 90 DA
+6192 3062 6222 3062 2 DLS
+6222 3018 6192 3018 2 DLS
+1709 3480 1.09 1.00 22 270 450 DA
+1669 3458 1669 3501 2 DLS
+1669 3501 1708 3501 2 DLS
+1708 3458 1669 3458 2 DLS
+1709 3555 1.09 1.00 22 270 450 DA
+1669 3533 1669 3577 2 DLS
+1669 3577 1708 3577 2 DLS
+1708 3533 1669 3533 2 DLS
+1927 3517 1941 3517 2 DLS
+6722 2236 6735 2236 2 DLS
+6707 2187 1.07 1.00 22 270 450 DA
+6667 2164 6667 2208 2 DLS
+6667 2208 6707 2208 2 DLS
+6707 2164 6667 2164 2 DLS
+1588 3492 1601 3492 2 DLS
+1588 3542 1601 3542 2 DLS
+6817 2186 6830 2186 2 DLS
+6735 2563 6749 2563 2 DLS
+6708 2563 6722 2563 2 DLS
+6735 2387 6749 2387 2 DLS
+6708 2387 6722 2387 2 DLS
+6309 2500 6323 2500 2 DLS
+6233 2487 6246 2487 2 DLS
+6233 2513 6246 2513 2 DLS
+6309 2575 6323 2575 2 DLS
+6233 2563 6246 2563 2 DLS
+6233 2588 6246 2588 2 DLS
+6309 2651 6323 2651 2 DLS
+6233 2638 6246 2638 2 DLS
+6233 2663 6246 2663 2 DLS
+6494 2563 6507 2563 2 DLS
+6369 2538 6382 2538 2 DLS
+6369 2563 6382 2563 2 DLS
+6369 2588 6382 2588 2 DLS
+6304 3115 6317 3115 2 DLS
+6178 3090 6192 3090 2 DLS
+6178 3115 6192 3115 2 DLS
+6178 3140 6192 3140 2 DLS
+6002 2789 6015 2789 2 DLS
+5975 2789 5988 2789 2 DLS
+6002 2814 6015 2814 2 DLS
+5975 2814 5988 2814 2 DLS
+6051 2864 6065 2864 2 DLS
+5975 2852 5988 2852 2 DLS
+5975 2877 5988 2877 2 DLS
+6735 2287 6749 2287 2 DLS
+6708 2287 6722 2287 2 DLS
+6735 2513 6749 2513 2 DLS
+6708 2513 6722 2513 2 DLS
+6735 2261 6749 2261 2 DLS
+6708 2261 6722 2261 2 DLS
+5617 3228 5630 3228 2 DLS
+5540 3216 5554 3216 2 DLS
+5540 3241 5554 3241 2 DLS
+5617 3304 5630 3304 2 DLS
+5540 3291 5554 3291 2 DLS
+5540 3316 5554 3316 2 DLS
+5617 3379 5630 3379 2 DLS
+5540 3366 5554 3366 2 DLS
+5540 3392 5554 3392 2 DLS
+5801 3291 5815 3291 2 DLS
+5676 3266 5690 3266 2 DLS
+5676 3291 5690 3291 2 DLS
+5676 3316 5690 3316 2 DLS
+6304 2739 6317 2739 2 DLS
+6178 2714 6192 2714 2 DLS
+6178 2739 6192 2739 2 DLS
+6178 2764 6192 2764 2 DLS
+5418 3216 5431 3216 2 DLS
+5391 3216 5404 3216 2 DLS
+5418 3241 5431 3241 2 DLS
+5391 3241 5404 3241 2 DLS
+5418 3316 5431 3316 2 DLS
+5391 3316 5404 3316 2 DLS
+5907 3291 5920 3291 2 DLS
+5880 3291 5893 3291 2 DLS
+6735 2437 6749 2437 2 DLS
+6708 2437 6722 2437 2 DLS
+5617 3454 5630 3454 2 DLS
+5540 3442 5554 3442 2 DLS
+5540 3467 5554 3467 2 DLS
+5617 3530 5630 3530 2 DLS
+5540 3517 5554 3517 2 DLS
+5540 3542 5554 3542 2 DLS
+5617 3605 5630 3605 2 DLS
+5540 3592 5554 3592 2 DLS
+5540 3618 5554 3618 2 DLS
+5801 3517 5815 3517 2 DLS
+5676 3492 5690 3492 2 DLS
+5676 3517 5690 3517 2 DLS
+5676 3542 5690 3542 2 DLS
+5027 3467 5041 3467 2 DLS
+4902 3442 4915 3442 2 DLS
+4902 3467 4915 3467 2 DLS
+4902 3492 4915 3492 2 DLS
+4779 3442 4793 3442 2 DLS
+4752 3442 4766 3442 2 DLS
+4829 3479 4842 3479 2 DLS
+4752 3467 4766 3467 2 DLS
+4752 3492 4766 3492 2 DLS
+4829 3555 4842 3555 2 DLS
+4752 3542 4766 3542 2 DLS
+4752 3567 4766 3567 2 DLS
+5907 3279 5920 3279 2 DLS
+5880 3279 5893 3279 2 DLS
+5336 3316 5350 3316 2 DLS
+5309 3316 5323 3316 2 DLS
+6735 2362 6749 2362 2 DLS
+6708 2362 6722 2362 2 DLS
+4978 3379 4992 3379 2 DLS
+4902 3366 4915 3366 2 DLS
+4902 3392 4915 3392 2 DLS
+6263 2814 6277 2814 2 DLS
+6178 2801 6192 2801 2 DLS
+6178 2827 6192 2827 2 DLS
+4779 3366 4793 3366 2 DLS
+4752 3366 4766 3366 2 DLS
+4779 3392 4793 3392 2 DLS
+4752 3392 4766 3392 2 DLS
+5336 3241 5350 3241 2 DLS
+5309 3241 5323 3241 2 DLS
+6735 2412 6749 2412 2 DLS
+6708 2412 6722 2412 2 DLS
+5033 3153 5046 3153 2 DLS
+4956 3140 4970 3140 2 DLS
+4956 3166 4970 3166 2 DLS
+5033 3228 5046 3228 2 DLS
+4956 3216 4970 3216 2 DLS
+4956 3241 4970 3241 2 DLS
+5033 3304 5046 3304 2 DLS
+4956 3291 4970 3291 2 DLS
+4956 3316 4970 3316 2 DLS
+5217 3216 5231 3216 2 DLS
+5092 3191 5105 3191 2 DLS
+5092 3216 5105 3216 2 DLS
+5092 3241 5105 3241 2 DLS
+4361 3693 4375 3693 2 DLS
+4236 3668 4250 3668 2 DLS
+4236 3693 4250 3693 2 DLS
+4236 3718 4250 3718 2 DLS
+4073 3668 4087 3668 2 DLS
+4046 3668 4060 3668 2 DLS
+4073 3693 4087 3693 2 DLS
+4046 3693 4060 3693 2 DLS
+4123 3731 4136 3731 2 DLS
+4046 3718 4060 3718 2 DLS
+4046 3743 4060 3743 2 DLS
+5336 3216 5350 3216 2 DLS
+5309 3216 5323 3216 2 DLS
+4671 3454 4684 3454 2 DLS
+4644 3454 4657 3454 2 DLS
+4367 3379 4381 3379 2 DLS
+4290 3366 4304 3366 2 DLS
+4290 3392 4304 3392 2 DLS
+4367 3454 4381 3454 2 DLS
+4290 3442 4304 3442 2 DLS
+4290 3467 4304 3467 2 DLS
+4367 3530 4381 3530 2 DLS
+4290 3517 4304 3517 2 DLS
+4290 3542 4304 3542 2 DLS
+4552 3442 4565 3442 2 DLS
+4426 3417 4440 3417 2 DLS
+4426 3442 4440 3442 2 DLS
+4426 3467 4440 3467 2 DLS
+3655 3944 3669 3944 2 DLS
+3530 3919 3543 3919 2 DLS
+3530 3944 3543 3944 2 DLS
+3530 3969 3543 3969 2 DLS
+3380 3919 3394 3919 2 DLS
+3353 3919 3367 3919 2 DLS
+3430 3957 3443 3957 2 DLS
+3353 3944 3367 3944 2 DLS
+3353 3969 3367 3969 2 DLS
+3430 4032 3443 4032 2 DLS
+3353 4019 3367 4019 2 DLS
+3353 4044 3367 4044 2 DLS
+4671 3442 4684 3442 2 DLS
+4644 3442 4657 3442 2 DLS
+3965 3693 3978 3693 2 DLS
+3937 3693 3951 3693 2 DLS
+6735 2538 6749 2538 2 DLS
+6708 2538 6722 2538 2 DLS
+4313 3605 4326 3605 2 DLS
+4236 3592 4250 3592 2 DLS
+4236 3618 4250 3618 2 DLS
+6263 2889 6277 2889 2 DLS
+6178 2877 6192 2877 2 DLS
+6178 2902 6192 2902 2 DLS
+4073 3592 4087 3592 2 DLS
+4046 3592 4060 3592 2 DLS
+4123 3630 4136 3630 2 DLS
+4046 3618 4060 3618 2 DLS
+4046 3643 4060 3643 2 DLS
+4671 3366 4684 3366 2 DLS
+4644 3366 4657 3366 2 DLS
+6735 2337 6749 2337 2 DLS
+6708 2337 6722 2337 2 DLS
+3661 3605 3674 3605 2 DLS
+3584 3592 3598 3592 2 DLS
+3584 3618 3598 3618 2 DLS
+3661 3680 3674 3680 2 DLS
+3584 3668 3598 3668 2 DLS
+3584 3693 3598 3693 2 DLS
+3661 3756 3674 3756 2 DLS
+3584 3743 3598 3743 2 DLS
+3584 3768 3598 3768 2 DLS
+3845 3668 3859 3668 2 DLS
+3720 3643 3734 3643 2 DLS
+3720 3668 3734 3668 2 DLS
+3720 3693 3734 3693 2 DLS
+3655 3844 3669 3844 2 DLS
+3530 3818 3543 3818 2 DLS
+3530 3844 3543 3844 2 DLS
+3530 3869 3543 3869 2 DLS
+3380 3216 3394 3216 2 DLS
+3353 3216 3367 3216 2 DLS
+3380 3241 3394 3241 2 DLS
+3353 3241 3367 3241 2 DLS
+3430 3291 3443 3291 2 DLS
+3353 3279 3367 3279 2 DLS
+3353 3304 3367 3304 2 DLS
+3965 3668 3978 3668 2 DLS
+3937 3668 3951 3668 2 DLS
+3965 3592 3978 3592 2 DLS
+3937 3592 3951 3592 2 DLS
+2968 3881 2982 3881 2 DLS
+2891 3869 2905 3869 2 DLS
+2891 3894 2905 3894 2 DLS
+2968 3957 2982 3957 2 DLS
+2891 3944 2905 3944 2 DLS
+2891 3969 2905 3969 2 DLS
+2968 4032 2982 4032 2 DLS
+2891 4019 2905 4019 2 DLS
+2891 4044 2905 4044 2 DLS
+3153 3944 3166 3944 2 DLS
+3027 3919 3041 3919 2 DLS
+3027 3944 3041 3944 2 DLS
+3027 3969 3041 3969 2 DLS
+2962 4195 2976 4195 2 DLS
+2837 4170 2851 4170 2 DLS
+2837 4195 2851 4195 2 DLS
+2837 4220 2851 4220 2 DLS
+2688 3479 2701 3479 2 DLS
+2661 3479 2674 3479 2 DLS
+2737 3530 2751 3530 2 DLS
+2661 3517 2674 3517 2 DLS
+2661 3542 2674 3542 2 DLS
+2737 3605 2751 3605 2 DLS
+2661 3592 2674 3592 2 DLS
+2661 3618 2674 3618 2 DLS
+3272 3944 3285 3944 2 DLS
+3245 3944 3258 3944 2 DLS
+3272 3931 3285 3931 2 DLS
+3245 3931 3258 3931 2 DLS
+6735 2487 6749 2487 2 DLS
+6708 2487 6722 2487 2 DLS
+2914 4107 2927 4107 2 DLS
+2837 4095 2851 4095 2 DLS
+2837 4120 2851 4120 2 DLS
+6263 2965 6277 2965 2 DLS
+6178 2952 6192 2952 2 DLS
+6178 2977 6192 2977 2 DLS
+2688 4095 2701 4095 2 DLS
+2661 4095 2674 4095 2 DLS
+2737 4132 2751 4132 2 DLS
+2661 4120 2674 4120 2 DLS
+2661 4145 2674 4145 2 DLS
+3272 3844 3285 3844 2 DLS
+3245 3844 3258 3844 2 DLS
+6735 2312 6749 2312 2 DLS
+6708 2312 6722 2312 2 DLS
+2289 3417 2303 3417 2 DLS
+2212 3404 2226 3404 2 DLS
+2212 3429 2226 3429 2 DLS
+2289 3492 2303 3492 2 DLS
+2212 3479 2226 3479 2 DLS
+2212 3505 2226 3505 2 DLS
+2289 3567 2303 3567 2 DLS
+2212 3555 2226 3555 2 DLS
+2212 3580 2226 3580 2 DLS
+2473 3479 2487 3479 2 DLS
+2348 3454 2362 3454 2 DLS
+2348 3479 2362 3479 2 DLS
+2348 3505 2362 3505 2 DLS
+2283 4095 2297 4095 2 DLS
+2158 4070 2172 4070 2 DLS
+2158 4095 2172 4095 2 DLS
+2158 4120 2172 4120 2 DLS
+2036 3517 2049 3517 2 DLS
+2009 3517 2022 3517 2 DLS
+2085 3567 2099 3567 2 DLS
+2009 3555 2022 3555 2 DLS
+2009 3580 2022 3580 2 DLS
+2085 3643 2099 3643 2 DLS
+2009 3630 2022 3630 2 DLS
+2009 3655 2022 3655 2 DLS
+2579 3479 2593 3479 2 DLS
+2552 3479 2566 3479 2 DLS
+2579 4095 2593 4095 2 DLS
+2552 4095 2566 4095 2 DLS
+6735 2462 6749 2462 2 DLS
+6708 2462 6722 2462 2 DLS
+1868 3517 1881 3517 2 DLS
+1791 3505 1805 3505 2 DLS
+1791 3530 1805 3530 2 DLS
+6263 3040 6277 3040 2 DLS
+6178 3027 6192 3027 2 DLS
+6178 3053 6192 3053 2 DLS
+1732 3479 1746 3479 2 DLS
+1655 3467 1669 3467 2 DLS
+1655 3492 1669 3492 2 DLS
+1732 3555 1746 3555 2 DLS
+1655 3542 1669 3542 2 DLS
+1655 3567 1669 3567 2 DLS
+1941 3517 1954 3517 2 DLS
+1914 3517 1927 3517 2 DLS
+6735 2236 6749 2236 2 DLS
+6708 2236 6722 2236 2 DLS
+6730 2186 6744 2186 2 DLS
+6654 2174 6667 2174 2 DLS
+6654 2199 6667 2199 2 DLS
+360 459 8059 459 8059 5493 360 5493 360 459  setclip
+stroke
+gsave showpage grestore
+greset
+%%EOF
